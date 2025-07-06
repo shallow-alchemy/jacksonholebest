@@ -4,6 +4,15 @@ import React, { useState, useRef, useEffect } from 'react'
 import { useTheme } from '@/themes'
 import styles from './ThemePicker.module.css'
 
+const THEME_PICKER_STORAGE_KEY = 'show-theme-picker'
+
+// Extend Window interface to include our global function
+declare global {
+  interface Window {
+    showThemePicker?: (show: boolean) => void
+  }
+}
+
 interface ThemeOption {
   id: string
   name: string
@@ -70,8 +79,29 @@ const themeOptions: ThemeOption[] = [
 
 export const ThemePicker: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const [isVisible, setIsVisible] = useState(false)
   const { currentTheme, switchTheme } = useTheme()
   const dropdownRef = useRef<HTMLDivElement>(null)
+
+  // Check localStorage on mount and set up global function
+  useEffect(() => {
+    const storedValue = localStorage.getItem(THEME_PICKER_STORAGE_KEY)
+    setIsVisible(storedValue === 'true')
+
+    // Add global function to window
+    window.showThemePicker = (show: boolean) => {
+      setIsVisible(show)
+      localStorage.setItem(THEME_PICKER_STORAGE_KEY, String(show))
+      if (!show) {
+        setIsOpen(false) // Close dropdown if hiding
+      }
+    }
+
+    return () => {
+      // Clean up global function on unmount
+      delete window.showThemePicker
+    }
+  }, [])
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -90,6 +120,11 @@ export const ThemePicker: React.FC = () => {
   }
 
   const currentThemeOption = themeOptions.find(theme => theme.id === currentTheme?.id) || themeOptions[0]
+
+  // Don't render anything if not visible
+  if (!isVisible) {
+    return null
+  }
 
   return (
     <div className={styles.container} ref={dropdownRef}>

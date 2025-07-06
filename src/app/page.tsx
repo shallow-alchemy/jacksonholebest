@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { getRestaurants } from '@/lib/restaurants'
 import { RestaurantCard } from '@/components/shared/RestaurantCard'
@@ -59,13 +58,6 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className={styles.heroSection}>
         <div className={styles.heroImageContainer}>
-          <Image
-            src="/images/tetons-summer.jpg"
-            alt="Jackson Hole mountain landscape with outdoor dining"
-            fill
-            className={styles.heroImage}
-            priority
-          />
           <div className={styles.heroOverlay}></div>
         </div>
         

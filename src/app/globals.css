@@ -144,6 +144,9 @@ a {
   --transition-fast: 0.15s ease-in-out;
   --transition-normal: 0.3s ease-in-out;
   --transition-slow: 0.5s ease-in-out;
+
+  /* Hero Image */
+  --hero-image: url('/images/jackson-hole.jpg');
 }
 
 /* Theme Classes */
@@ -166,6 +169,7 @@ a {
   --color-primary-800: #166534;
   --color-primary-900: #14532d;
   --color-primary-950: #052e16;
+  --hero-image: url('/images/tetons-spring.jpg');
 }
 
 .theme-summer-alpine {
@@ -182,6 +186,7 @@ a {
   --color-primary-800: #065f46;
   --color-primary-900: #064e3b;
   --color-primary-950: #022c22;
+  --hero-image: url('/images/tetons-summer.jpg');
 }
 
 .theme-autumn-harvest {
@@ -198,6 +203,7 @@ a {
   --color-primary-800: #8f281e;
   --color-primary-900: #74231c;
   --color-primary-950: #40100c;
+  --hero-image: url('/images/tetons-autumn.jpg');
 }
 
 .theme-winter-wonderland {
@@ -214,6 +220,7 @@ a {
   --color-primary-800: #1e293b;
   --color-primary-900: #0f172a;
   --color-primary-950: #020617;
+  --hero-image: url('/images/tetons-winter.jpg');
 }
 
 /* Global Utility Classes */

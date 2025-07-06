@@ -1,55 +1,84 @@
-/* Theme Picker Styles */
+/* Floating Theme Picker Widget */
 .container {
-  position: relative;
-  display: inline-block;
+  position: fixed;
+  bottom: var(--spacing-xl);
+  right: var(--spacing-xl);
+  z-index: 1000;
 }
 
 .button {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--spacing-sm);
-  padding: var(--spacing-sm) var(--spacing-md);
-  background-color: white;
-  border: 1px solid var(--color-neutral-300);
-  border-radius: var(--border-radius-md);
-  font-size: var(--font-size-sm);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: var(--color-primary-600);
+  border: 3px solid white;
+  box-shadow: var(--shadow-lg);
   cursor: pointer;
   transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .button:hover {
-  background-color: var(--color-neutral-50);
-  border-color: var(--color-primary-300);
+  background-color: var(--color-primary-700);
+  transform: scale(1.05);
+  box-shadow: var(--shadow-xl);
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.themePreview {
+  display: flex;
+  gap: 2px;
+  flex-wrap: wrap;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.colorSwatch {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 .buttonText {
-  color: var(--color-neutral-700);
+  display: none;
 }
 
 .dropdown {
   position: absolute;
-  top: 100%;
+  bottom: 100%;
   right: 0;
-  margin-top: var(--spacing-xs);
+  margin-bottom: var(--spacing-sm);
   background-color: white;
   border: 1px solid var(--color-neutral-200);
   border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow-lg);
-  min-width: 12rem;
-  z-index: 50;
+  box-shadow: var(--shadow-xl);
+  min-width: 16rem;
+  max-height: 20rem;
+  overflow-y: auto;
 }
 
 .dropdownItem {
   display: flex;
   align-items: center;
   gap: var(--spacing-sm);
-  padding: var(--spacing-sm) var(--spacing-md);
+  padding: var(--spacing-md);
   cursor: pointer;
   transition: background-color var(--transition-fast);
   border: none;
   background: none;
   width: 100%;
   text-align: left;
+  border-bottom: 1px solid var(--color-neutral-100);
 }
 
 .dropdownItem:hover {
@@ -62,6 +91,7 @@
 
 .dropdownItem:last-child {
   border-radius: 0 0 var(--border-radius-lg) var(--border-radius-lg);
+  border-bottom: none;
 }
 
 .dropdownItemActive {
@@ -69,15 +99,17 @@
   color: var(--color-primary-700);
 }
 
-.themePreview {
+.dropdownItem .themePreview {
   display: flex;
-  gap: 2px;
+  gap: 3px;
   margin-right: var(--spacing-sm);
+  width: auto;
+  height: auto;
 }
 
-.colorSwatch {
-  width: 12px;
-  height: 12px;
+.dropdownItem .colorSwatch {
+  width: 14px;
+  height: 14px;
   border-radius: var(--border-radius-sm);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -85,9 +117,68 @@
 .themeName {
   font-weight: 500;
   color: var(--color-neutral-900);
+  font-size: var(--font-size-sm);
 }
 
 .themeDescription {
   font-size: var(--font-size-xs);
   color: var(--color-neutral-500);
+  margin-top: 2px;
+}
+
+/* Animation for widget appearance */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  animation: fadeInUp 0.3s ease-out;
+}
+
+.dropdown {
+  animation: fadeInDown 0.2s ease-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .container {
+    bottom: var(--spacing-lg);
+    right: var(--spacing-lg);
+  }
+  
+  .button {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .dropdown {
+    right: -2rem;
+    min-width: 14rem;
+  }
+}
+
+/* Ensure dropdown doesn't go off screen on small devices */
+@media (max-width: 320px) {
+  .dropdown {
+    right: -6rem;
+    min-width: 12rem;
+  }
 }

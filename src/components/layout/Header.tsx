@@ -3,7 +3,6 @@
 import React from 'react'
 import Link from 'next/link'
 import { Navigation } from './Navigation'
-import { ThemePicker } from '@/components/shared'
 import styles from './Header.module.css'
 
 export const Header: React.FC = () => {
@@ -22,7 +21,6 @@ export const Header: React.FC = () => {
           
           <div className={styles.actions}>
             <Navigation />
-            <ThemePicker />
           </div>
         </div>
       </div>
