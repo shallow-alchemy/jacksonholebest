@@ -1,0 +1,50 @@
+[
+  {
+    "id": "post-hike-fuel",
+    "name": "Post-Hike Fuel",
+    "icon": "🥾",
+    "description": "Perfect for refueling after outdoor adventures"
+  },
+  {
+    "id": "local-favorite",
+    "name": "Local Favorite",
+    "icon": "⭐",
+    "description": "Beloved by Jackson Hole locals"
+  },
+  {
+    "id": "fine-dining",
+    "name": "Fine Dining",
+    "icon": "🍷",
+    "description": "Upscale dining for special occasions"
+  },
+  {
+    "id": "casual-dining",
+    "name": "Casual Dining",
+    "icon": "🍽️",
+    "description": "Relaxed atmosphere for everyday meals"
+  },
+  {
+    "id": "family-friendly",
+    "name": "Family Friendly",
+    "icon": "👨‍👩‍👧‍👦",
+    "description": "Great for dining with kids"
+  },
+  {
+    "id": "romantic",
+    "name": "Romantic",
+    "icon": "❤️",
+    "description": "Perfect for date nights"
+  },
+  {
+    "id": "group-dining",
+    "name": "Group Dining",
+    "icon": "👥",
+    "description": "Ideal for large groups and celebrations"
+  },
+  {
+    "id": "quick-bite",
+    "name": "Quick Bite",
+    "icon": "⚡",
+    "description": "Fast and convenient options"
+  }
+]
