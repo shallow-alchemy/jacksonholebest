@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './PriceIndicator.module.css'
 
 interface PriceIndicatorProps {
   priceLevel: 1 | 2 | 3 | 4
@@ -11,11 +12,8 @@ export const PriceIndicator: React.FC<PriceIndicatorProps> = ({
   showText = false,
   size = 'md'
 }) => {
-  const sizeClasses = {
-    sm: 'text-sm px-2 py-1',
-    md: 'text-base px-3 py-1.5',
-    lg: 'text-lg px-4 py-2'
-  }
+  const sizeClass = size === 'sm' ? styles.indicatorSm : 
+                   size === 'lg' ? styles.indicatorLg : styles.indicatorMd
 
   const priceText = {
     1: 'Budget-friendly',
@@ -27,10 +25,10 @@ export const PriceIndicator: React.FC<PriceIndicatorProps> = ({
   const dollarSigns = '$'.repeat(priceLevel)
 
   return (
-    <div className={`inline-flex items-center bg-white bg-opacity-90 backdrop-blur-sm rounded-full ${sizeClasses[size]}`}>
-      <span className="font-bold text-gray-900">{dollarSigns}</span>
+    <div className={`${styles.indicator} ${sizeClass}`}>
+      <span className={styles.dollarSigns}>{dollarSigns}</span>
       {showText && (
-        <span className="ml-2 text-gray-700">{priceText[priceLevel]}</span>
+        <span className={styles.text}>{priceText[priceLevel]}</span>
       )}
     </div>
   )

@@ -1,0 +1,59 @@
+/* Header Styles */
+.header {
+  background-color: white;
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid var(--color-neutral-200);
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logoTitle {
+  font-size: var(--font-size-2xl);
+  font-weight: bold;
+  color: var(--color-primary-600);
+}
+
+.logoTagline {
+  margin-left: var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  color: var(--color-neutral-500);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+/* Responsive Design */
+@media (min-width: 640px) {
+  .container {
+    padding: 0 var(--spacing-lg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 var(--spacing-xl);
+  }
+}

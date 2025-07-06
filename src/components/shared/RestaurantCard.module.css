@@ -1,0 +1,138 @@
+/* Restaurant Card Styles */
+.card {
+  background-color: white;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  transition: box-shadow var(--transition-normal);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.cardFeatured {
+  border-radius: var(--border-radius-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.cardFeatured:hover {
+  box-shadow: var(--shadow-xl);
+}
+
+.cardCompact {
+  box-shadow: var(--shadow-sm);
+}
+
+.cardCompact:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.imageFeatured {
+  height: 16rem;
+}
+
+.imageList {
+  height: 12rem;
+}
+
+.imageCompact {
+  height: 8rem;
+}
+
+.priceIndicator {
+  position: absolute;
+  top: var(--spacing-md);
+  left: var(--spacing-md);
+}
+
+.content {
+  padding: var(--spacing-lg);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-sm);
+}
+
+.title {
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+  color: var(--color-neutral-900);
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.ratingIcon {
+  color: #fbbf24;
+}
+
+.ratingValue {
+  margin-left: var(--spacing-xs);
+  font-size: var(--font-size-sm);
+  color: var(--color-neutral-600);
+}
+
+.cuisine {
+  color: var(--color-neutral-600);
+  margin-bottom: var(--spacing-sm);
+}
+
+.distance {
+  font-size: var(--font-size-sm);
+  color: var(--color-neutral-500);
+  margin-bottom: var(--spacing-sm);
+}
+
+.description {
+  color: var(--color-neutral-700);
+  margin-bottom: var(--spacing-md);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.tag {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background-color: var(--color-primary-100);
+  color: var(--color-primary-800);
+  border-radius: var(--border-radius-full);
+  font-size: var(--font-size-sm);
+}
+
+.reservationButton {
+  width: 100%;
+  background-color: var(--color-primary-600);
+  color: white;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-lg);
+  border: none;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.reservationButton:hover {
+  background-color: var(--color-primary-700);
+}

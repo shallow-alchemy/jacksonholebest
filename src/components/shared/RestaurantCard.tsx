@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Restaurant } from '@/types/restaurant'
 import { PriceIndicator } from './PriceIndicator'
+import styles from './RestaurantCard.module.css'
 
 interface RestaurantCardProps {
   restaurant: Restaurant
@@ -19,61 +20,59 @@ export const RestaurantCard: React.FC<RestaurantCardProps> = ({
   showReservationLink = false,
   className = ''
 }) => {
-  const cardClasses = {
-    featured: 'bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300',
-    list: 'bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200',
-    compact: 'bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-200'
-  }
+  const cardClass = `${styles.card} ${
+    variant === 'featured' ? styles.cardFeatured : 
+    variant === 'compact' ? styles.cardCompact : ''
+  } ${className}`
 
-  const imageClasses = {
-    featured: 'w-full h-64 object-cover',
-    list: 'w-full h-48 object-cover',
-    compact: 'w-full h-32 object-cover'
-  }
+  const imageClass = `${styles.image} ${
+    variant === 'featured' ? styles.imageFeatured :
+    variant === 'compact' ? styles.imageCompact : styles.imageList
+  }`
 
   return (
-    <div className={`${cardClasses[variant]} ${className}`}>
+    <div className={cardClass}>
       <Link href={`/restaurants/${restaurant.slug}`}>
-        <div className="relative">
+        <div className={styles.imageContainer}>
           <Image
             src={restaurant.images[0]?.url || '/images/placeholder-restaurant.svg'}
             alt={restaurant.images[0]?.alt || `${restaurant.name} exterior`}
             width={variant === 'featured' ? 600 : 400}
             height={variant === 'featured' ? 400 : 300}
-            className={imageClasses[variant]}
+            className={imageClass}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
-          <div className="absolute top-4 left-4">
+          <div className={styles.priceIndicator}>
             <PriceIndicator priceLevel={restaurant.priceLevel} />
           </div>
         </div>
         
-        <div className="p-6">
-          <div className="flex items-center justify-between mb-2">
-            <h3 className="text-xl font-bold text-gray-900">{restaurant.name}</h3>
-            <div className="flex items-center">
-              <span className="text-yellow-500">★</span>
-              <span className="ml-1 text-sm text-gray-600">{restaurant.rating.overall}</span>
+        <div className={styles.content}>
+          <div className={styles.header}>
+            <h3 className={styles.title}>{restaurant.name}</h3>
+            <div className={styles.rating}>
+              <span className={styles.ratingIcon}>★</span>
+              <span className={styles.ratingValue}>{restaurant.rating.overall}</span>
             </div>
           </div>
           
-          <p className="text-gray-600 mb-2">{restaurant.dining.cuisine}</p>
+          <p className={styles.cuisine}>{restaurant.dining.cuisine}</p>
           
           {showDistance && (
-            <p className="text-sm text-gray-500 mb-2">
+            <p className={styles.distance}>
               📍 {restaurant.location.distanceFromPark} from Grand Teton
             </p>
           )}
           
-          <p className="text-gray-700 mb-4 line-clamp-2">
+          <p className={styles.description}>
             {restaurant.content.description}
           </p>
           
-          <div className="flex flex-wrap gap-2 mb-4">
+          <div className={styles.tags}>
             {restaurant.experience.bestFor.slice(0, 2).map((tag, index) => (
               <span
                 key={index}
-                className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                className={styles.tag}
               >
                 {tag}
               </span>
@@ -81,7 +80,7 @@ export const RestaurantCard: React.FC<RestaurantCardProps> = ({
           </div>
           
           {showReservationLink && restaurant.dining.reservationLink && (
-            <button className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
+            <button className={styles.reservationButton}>
               Make Reservation
             </button>
           )}

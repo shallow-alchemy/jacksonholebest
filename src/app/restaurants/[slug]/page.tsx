@@ -3,11 +3,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { getRestaurant, getRestaurants } from '@/lib/restaurants'
 import { PriceIndicator } from '@/components/shared/PriceIndicator'
+import styles from './page.module.css'
 
 interface RestaurantPageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 export async function generateStaticParams() {
@@ -29,7 +30,7 @@ export async function generateMetadata({ params }: RestaurantPageProps) {
   }
 
   return {
-    title: `${restaurant.name} - Jackson Hole Dining`,
+    title: `${restaurant.name} | Jackson Hole Dining Guide`,
     description: restaurant.content.description,
   }
 }
@@ -43,199 +44,134 @@ export default async function RestaurantPage({ params }: RestaurantPageProps) {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="relative h-96 mb-8">
+    <div className={styles.container}>
+      <div className={styles.heroSection}>
         <Image
           src={restaurant.images[0]?.url || '/images/placeholder-restaurant.svg'}
           alt={restaurant.images[0]?.alt || `${restaurant.name} exterior`}
           fill
-          className="object-cover"
+          className={styles.heroImage}
           priority
         />
-        <div className="absolute inset-0 bg-black bg-opacity-30" />
-        <div className="absolute bottom-6 left-6 text-white">
-          <div className="flex items-center gap-4 mb-2">
-            <h1 className="text-4xl font-bold">{restaurant.name}</h1>
+        <div className={styles.heroOverlay} />
+        <div className={styles.heroContent}>
+          <div className={styles.heroHeader}>
+            <h1 className={styles.heroTitle}>{restaurant.name}</h1>
             <PriceIndicator priceLevel={restaurant.priceLevel} />
           </div>
-          <p className="text-xl">{restaurant.dining.cuisine}</p>
+          <p className={styles.heroCuisine}>{restaurant.dining.cuisine}</p>
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-6 pb-12">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-2">
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold mb-4">About</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
+      <div className={styles.content}>
+        <Link href="/" className={styles.backLink}>
+          <span className={styles.backIcon}>←</span>
+          Back to restaurants
+        </Link>
+
+        <div className={styles.grid}>
+          <div className={styles.mainContent}>
+            <section className={styles.section}>
+              <h2 className={styles.sectionTitle}>About</h2>
+              <p className={styles.description}>
                 {restaurant.content.description}
               </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <h3 className="font-semibold mb-2">Highlights</h3>
-                  <ul className="text-gray-700 space-y-1">
-                    {restaurant.content.highlights.map((highlight, index) => (
-                      <li key={index} className="flex items-start">
-                        <span className="text-green-600 mr-2">•</span>
-                        {highlight}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                
-                <div>
-                  <h3 className="font-semibold mb-2">Insider Tips</h3>
-                  <ul className="text-gray-700 space-y-1">
+              {restaurant.content.highlights && restaurant.content.highlights.length > 0 && (
+                <ul className={styles.highlights}>
+                  {restaurant.content.highlights.map((highlight, index) => (
+                    <li key={index} className={styles.highlight}>
+                      {highlight}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </section>
+
+            {restaurant.content.tips && restaurant.content.tips.length > 0 && (
+              <section className={styles.section}>
+                <div className={styles.tips}>
+                  <h3 className={styles.tipsTitle}>Insider Tips</h3>
+                  <ul className={styles.tipsList}>
                     {restaurant.content.tips.map((tip, index) => (
-                      <li key={index} className="flex items-start">
-                        <span className="text-blue-600 mr-2">💡</span>
+                      <li key={index} className={styles.tip}>
                         {tip}
                       </li>
                     ))}
                   </ul>
                 </div>
-              </div>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold mb-4">Specialties</h2>
-              <div className="flex flex-wrap gap-2">
-                {restaurant.experience.specialties.map((specialty, index) => (
-                  <span
-                    key={index}
-                    className="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm"
-                  >
-                    {specialty}
-                  </span>
-                ))}
-              </div>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold mb-4">Perfect For</h2>
-              <div className="flex flex-wrap gap-2">
-                {restaurant.experience.bestFor.map((occasion, index) => (
-                  <span
-                    key={index}
-                    className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
-                  >
-                    {occasion}
-                  </span>
-                ))}
-              </div>
-            </section>
+              </section>
+            )}
           </div>
 
-          <div className="lg:col-span-1">
-            <div className="bg-white rounded-lg shadow-lg p-6 sticky top-6">
-              <div className="mb-6">
-                <div className="flex items-center justify-between mb-2">
-                  <span className="text-lg font-semibold">Rating</span>
-                  <div className="flex items-center">
-                    <span className="text-yellow-500 text-xl">★</span>
-                    <span className="ml-1 text-lg font-bold">{restaurant.rating.overall}</span>
-                  </div>
+          <div className={styles.sidebar}>
+            <div className={styles.infoCard}>
+              <h3 className={styles.sectionTitle}>Restaurant Info</h3>
+              <div className={styles.infoGrid}>
+                <div className={styles.infoItem}>
+                  <div className={styles.infoLabel}>Cuisine</div>
+                  <div className={styles.infoValue}>{restaurant.dining.cuisine}</div>
                 </div>
-                <div className="space-y-2 text-sm">
-                  <div className="flex justify-between">
-                    <span>Food:</span>
-                    <span>{restaurant.rating.food}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Service:</span>
-                    <span>{restaurant.rating.service}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Value:</span>
-                    <span>{restaurant.rating.value}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Atmosphere:</span>
-                    <span>{restaurant.rating.atmosphere}</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mb-6">
-                <h3 className="font-semibold mb-2">Details</h3>
-                <div className="space-y-2 text-sm">
-                  <div className="flex justify-between">
-                    <span>Average Meal:</span>
-                    <span>{restaurant.dining.averageMeal}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Reservations:</span>
-                    <span className="capitalize">{restaurant.dining.reservations}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Distance:</span>
-                    <span>{restaurant.location.distanceFromPark}</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mb-6">
-                <h3 className="font-semibold mb-2">Dietary Options</h3>
-                <div className="flex flex-wrap gap-1">
-                  {restaurant.dining.dietaryOptions.map((option, index) => (
-                    <span
-                      key={index}
-                      className="px-2 py-1 bg-green-100 text-green-800 rounded text-xs"
-                    >
-                      {option}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              <div className="space-y-3">
-                {restaurant.dining.reservationLink && (
-                  <a
-                    href={restaurant.dining.reservationLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block w-full bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700 transition-colors"
-                  >
-                    Make Reservation
-                  </a>
-                )}
                 
+                <div className={styles.infoItem}>
+                  <div className={styles.infoLabel}>Price Range</div>
+                  <div className={styles.infoValue}>{restaurant.dining.averageMeal}</div>
+                </div>
+                
+                <div className={styles.infoItem}>
+                  <div className={styles.infoLabel}>Location</div>
+                  <div className={styles.infoValue}>
+                    {restaurant.location.address}
+                    <br />
+                    <small>{restaurant.location.distanceFromPark} from Grand Teton</small>
+                  </div>
+                </div>
+                
+                <div className={styles.infoItem}>
+                  <div className={styles.infoLabel}>Best For</div>
+                  <div className={styles.infoValue}>
+                    {restaurant.experience.bestFor.join(', ')}
+                  </div>
+                </div>
+                
+                <div className={styles.infoItem}>
+                  <div className={styles.infoLabel}>Atmosphere</div>
+                  <div className={styles.infoValue}>{restaurant.experience.atmosphere}</div>
+                </div>
+                
+                <div className={styles.infoItem}>
+                  <div className={styles.infoLabel}>Reservations</div>
+                  <div className={styles.infoValue}>
+                    {restaurant.dining.reservations === 'required' ? 'Required' :
+                     restaurant.dining.reservations === 'recommended' ? 'Recommended' :
+                     'Not accepted'}
+                  </div>
+                </div>
+                
+                {restaurant.practical?.phone && (
+                  <div className={styles.infoItem}>
+                    <div className={styles.infoLabel}>Phone</div>
+                    <div className={styles.infoValue}>
+                      <a href={`tel:${restaurant.practical.phone}`}>
+                        {restaurant.practical.phone}
+                      </a>
+                    </div>
+                  </div>
+                )}
+              </div>
+              
+              {restaurant.dining.reservationLink && (
                 <a
-                  href={restaurant.practical.website}
+                  href={restaurant.dining.reservationLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full border border-gray-300 text-gray-700 text-center py-3 rounded-lg hover:bg-gray-50 transition-colors"
+                  className={styles.reservationButton}
                 >
-                  Visit Website
+                  Make Reservation
                 </a>
-                
-                <a
-                  href={`tel:${restaurant.practical.phone}`}
-                  className="block w-full border border-gray-300 text-gray-700 text-center py-3 rounded-lg hover:bg-gray-50 transition-colors"
-                >
-                  Call {restaurant.practical.phone}
-                </a>
-              </div>
-
-              <div className="mt-6 pt-6 border-t">
-                <h3 className="font-semibold mb-2">Location</h3>
-                <p className="text-sm text-gray-600 mb-2">{restaurant.location.address}</p>
-                <div className="text-xs text-gray-500">
-                  📍 {restaurant.location.distanceFromPark} from Grand Teton National Park
-                </div>
-              </div>
+              )}
             </div>
           </div>
-        </div>
-
-        <div className="mt-12 text-center">
-          <Link
-            href="/"
-            className="inline-flex items-center px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors"
-          >
-            ← Back to All Restaurants
-          </Link>
         </div>
       </div>
     </div>

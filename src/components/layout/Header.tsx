@@ -1,22 +1,29 @@
+'use client'
+
 import React from 'react'
 import Link from 'next/link'
 import { Navigation } from './Navigation'
+import { ThemePicker } from '@/components/shared'
+import styles from './Header.module.css'
 
 export const Header: React.FC = () => {
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <Link href="/" className="flex items-center">
-            <h1 className="text-2xl font-bold text-gray-900">
+    <header className={styles.header}>
+      <div className={styles.container}>
+        <div className={styles.content}>
+          <Link href="/" className={styles.logoLink}>
+            <h1 className={styles.logoTitle}>
               Jackson Hole Dining
             </h1>
-            <span className="ml-2 text-sm text-gray-500">
+            <span className={styles.logoTagline}>
               🏔️ Adventure • Food • Experience
             </span>
           </Link>
           
-          <Navigation />
+          <div className={styles.actions}>
+            <Navigation />
+            <ThemePicker />
+          </div>
         </div>
       </div>
     </header>

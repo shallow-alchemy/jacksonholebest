@@ -8,6 +8,7 @@ import { RestaurantCard } from '@/components/shared/RestaurantCard'
 import { CategoryFilter } from '@/components/shared/CategoryFilter'
 import { Restaurant } from '@/types/restaurant'
 import categoriesData from '@/data/categories.json'
+import styles from './page.module.css'
 
 export default function HomePage() {
   const [restaurants, setRestaurants] = useState<Restaurant[]>([])
@@ -44,95 +45,95 @@ export default function HomePage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading restaurants...</p>
+      <div className={styles.loadingContainer}>
+        <div className={styles.loadingContent}>
+          <div className={styles.loadingSpinner}></div>
+          <p className={styles.loadingText}>Loading restaurants...</p>
         </div>
       </div>
     )
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className={styles.container}>
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
+      <section className={styles.heroSection}>
+        <div className={styles.heroImageContainer}>
           <Image
-            src="/images/hero-jackson-hole.jpg"
+            src="/images/tetons-summer.jpg"
             alt="Jackson Hole mountain landscape with outdoor dining"
             fill
-            className="object-cover"
+            className={styles.heroImage}
             priority
           />
-          <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+          <div className={styles.heroOverlay}></div>
         </div>
         
-        <div className="relative z-10 text-center text-white max-w-4xl px-6">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+        <div className={styles.heroContent}>
+          <h1 className={styles.heroTitle}>
             Fuel Your
             <br />
-            <span className="text-orange-400">Adventure</span>
+            <span className={styles.heroTitleAccent}>Adventure</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto leading-relaxed">
-            Discover Jackson Hole's best restaurants, from post-hike fuel to fine dining. 
+          <p className={styles.heroSubtitle}>
+            Discover Jackson Hole&apos;s best restaurants, from post-hike fuel to fine dining. 
             Every meal is part of your mountain adventure.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className={styles.heroButtons}>
             <Link
               href="#restaurants"
-              className="bg-orange-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-600 transition-colors"
+              className={styles.heroButtonPrimary}
             >
               Explore Restaurants
             </Link>
             <Link
               href="#categories"
-              className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors"
+              className={styles.heroButtonSecondary}
             >
               Find Your Vibe
             </Link>
           </div>
         </div>
         
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div className={styles.heroScrollIndicator}>
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>
         </div>
       </section>
 
       {/* Adventure Dining Positioning */}
-      <section className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+      <section className={styles.aboutSection}>
+        <div className={styles.aboutContainer}>
+          <div className={styles.aboutHeader}>
+            <h2 className={styles.aboutTitle}>
               Where Adventure Meets Exceptional Dining
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Jackson Hole isn't just about world-class skiing and hiking—it's home to an incredible culinary scene 
+            <p className={styles.aboutSubtitle}>
+              Jackson Hole isn&apos;t just about world-class skiing and hiking—it&apos;s home to an incredible culinary scene 
               that perfectly complements your outdoor adventures.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="text-4xl mb-4">🥾</div>
-              <h3 className="text-xl font-semibold mb-2">Post-Adventure Fuel</h3>
-              <p className="text-gray-600">
+          <div className={styles.aboutGrid}>
+            <div className={styles.aboutCard}>
+              <div className={styles.aboutIcon}>🥾</div>
+              <h3 className={styles.aboutCardTitle}>Post-Adventure Fuel</h3>
+              <p className={styles.aboutCardText}>
                 Hearty meals and craft beers to refuel after a day on the mountain or trail.
               </p>
             </div>
-            <div className="text-center">
-              <div className="text-4xl mb-4">🍷</div>
-              <h3 className="text-xl font-semibold mb-2">Elevated Experiences</h3>
-              <p className="text-gray-600">
+            <div className={styles.aboutCard}>
+              <div className={styles.aboutIcon}>🍷</div>
+              <h3 className={styles.aboutCardTitle}>Elevated Experiences</h3>
+              <p className={styles.aboutCardText}>
                 Fine dining that rivals any major city, with mountain views as your backdrop.
               </p>
             </div>
-            <div className="text-center">
-              <div className="text-4xl mb-4">🏔️</div>
-              <h3 className="text-xl font-semibold mb-2">Local Flavors</h3>
-              <p className="text-gray-600">
+            <div className={styles.aboutCard}>
+              <div className={styles.aboutIcon}>🏔️</div>
+              <h3 className={styles.aboutCardTitle}>Local Flavors</h3>
+              <p className={styles.aboutCardText}>
                 Authentic Western cuisine and local favorites that capture the spirit of Jackson Hole.
               </p>
             </div>
@@ -141,12 +142,12 @@ export default function HomePage() {
       </section>
 
       {/* Category Filters */}
-      <section id="categories" className="py-12 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">
+      <section id="categories" className={styles.categoriesSection}>
+        <div className={styles.categoriesContainer}>
+          <h2 className={styles.categoriesTitle}>
             Find Your Perfect Dining Experience
           </h2>
-          <div className="flex justify-center">
+          <div className={styles.categoriesFilter}>
             <CategoryFilter
               categories={categoriesData}
               selectedCategories={selectedCategories}
@@ -158,13 +159,13 @@ export default function HomePage() {
       </section>
 
       {/* Featured Restaurants */}
-      <section id="restaurants" className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+      <section id="restaurants" className={styles.restaurantsSection}>
+        <div className={styles.restaurantsContainer}>
+          <div className={styles.restaurantsHeader}>
+            <h2 className={styles.restaurantsTitle}>
               {selectedCategories.length > 0 ? 'Filtered Restaurants' : 'Featured Restaurants'}
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className={styles.restaurantsSubtitle}>
               {selectedCategories.length > 0 
                 ? `Found ${filteredRestaurants.length} restaurants matching your preferences`
                 : 'Hand-picked dining experiences that perfectly complement your Jackson Hole adventure'
@@ -173,30 +174,30 @@ export default function HomePage() {
           </div>
           
           {filteredRestaurants.length === 0 ? (
-            <div className="text-center py-12">
-              <p className="text-gray-600 text-lg">
+            <div className={styles.noResults}>
+              <p className={styles.noResultsText}>
                 No restaurants match your selected categories. Try adjusting your filters.
               </p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className={styles.restaurantsGrid}>
               {filteredRestaurants.slice(0, 8).map((restaurant, index) => (
                 <RestaurantCard
                   key={restaurant.id}
                   restaurant={restaurant}
                   variant={index === 0 ? 'featured' : 'list'}
                   showDistance={true}
-                  className={index === 0 ? 'md:col-span-2 lg:col-span-1' : ''}
+                  className={index === 0 ? styles.featuredCard : ''}
                 />
               ))}
             </div>
           )}
           
           {filteredRestaurants.length > 8 && (
-            <div className="text-center mt-12">
+            <div className={styles.viewAllButton}>
               <Link
                 href="/restaurants"
-                className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                className={styles.viewAllLink}
               >
                 View All Restaurants ({filteredRestaurants.length})
               </Link>
@@ -206,25 +207,25 @@ export default function HomePage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-gradient-to-r from-orange-500 to-red-500">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <section className={styles.ctaSection}>
+        <div className={styles.ctaContainer}>
+          <h2 className={styles.ctaTitle}>
             Ready to Fuel Your Next Adventure?
           </h2>
-          <p className="text-xl text-white mb-8 opacity-90">
-            Whether you're planning a post-hike meal or celebrating a special occasion, 
-            we'll help you find the perfect dining experience in Jackson Hole.
+          <p className={styles.ctaSubtitle}>
+            Whether you&apos;re planning a post-hike meal or celebrating a special occasion, 
+            we&apos;ll help you find the perfect dining experience in Jackson Hole.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className={styles.ctaButtons}>
             <Link
               href="/restaurants"
-              className="bg-white text-orange-500 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors"
+              className={styles.ctaButtonPrimary}
             >
               Browse All Restaurants
             </Link>
             <Link
               href="/about"
-              className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-orange-500 transition-colors"
+              className={styles.ctaButtonSecondary}
             >
               Learn More
             </Link>

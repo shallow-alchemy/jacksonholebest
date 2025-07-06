@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './CategoryFilter.module.css'
 
 interface Category {
   id: string
@@ -28,26 +29,24 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
     }
   }
 
-  const containerClasses = layout === 'horizontal' 
-    ? 'flex flex-wrap gap-3' 
-    : 'space-y-2'
+  const containerClass = layout === 'horizontal' 
+    ? styles.containerHorizontal 
+    : styles.containerVertical
 
   return (
-    <div className={containerClasses}>
+    <div className={containerClass}>
       {categories.map((category) => (
         <button
           key={category.id}
           onClick={() => handleCategoryToggle(category.id)}
-          className={`
-            flex items-center px-4 py-2 rounded-lg border-2 transition-colors
-            ${selectedCategories.includes(category.id)
-              ? 'border-blue-500 bg-blue-50 text-blue-700'
-              : 'border-gray-300 bg-white text-gray-700 hover:border-gray-400'
-            }
-          `}
+          className={`${styles.button} ${
+            selectedCategories.includes(category.id)
+              ? styles.buttonActive
+              : styles.buttonInactive
+          }`}
         >
-          <span className="mr-2">{category.icon}</span>
-          <span className="font-medium">{category.name}</span>
+          <span className={styles.icon}>{category.icon}</span>
+          <span className={styles.label}>{category.name}</span>
         </button>
       ))}
     </div>
