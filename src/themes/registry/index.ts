@@ -45,7 +45,7 @@ export class ThemeRegistry implements IThemeRegistry {
           const preferredTheme = await this.loadTheme(this.preferences.preferredTheme)
           this.themes.set(preferredTheme.id, preferredTheme)
           this.activeTheme = preferredTheme.id
-        } catch (error) {
+        } catch {
           console.warn(`Failed to load preferred theme '${this.preferences.preferredTheme}', using default`)
           this.activeTheme = this.defaultTheme
         }

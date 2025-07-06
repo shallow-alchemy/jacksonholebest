@@ -1,7 +1,7 @@
 'use client'
 
-import React, { createContext, useContext } from 'react'
-import { Theme, ThemeContext as IThemeContext, ThemePreferences } from '../registry/types'
+import { createContext, useContext } from 'react'
+import { ThemeContext as IThemeContext } from '../registry/types'
 
 const ThemeContext = createContext<IThemeContext | null>(null)
 

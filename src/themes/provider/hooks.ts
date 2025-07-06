@@ -1,7 +1,7 @@
 'use client'
 
 import { useCallback, useEffect, useState } from 'react'
-import { useTheme, useThemeValue, useThemeColors } from './ThemeContext'
+import { useTheme, useThemeColors } from './ThemeContext'
 
 // Hook for theme-aware styling
 export const useThemeStyles = (componentName: keyof ReturnType<typeof useTheme>['currentTheme']['components']) => {
@@ -57,11 +57,11 @@ export const useThemeColor = () => {
 
   const getColor = useCallback((path: string, fallback?: string) => {
     const keys = path.split('.')
-    let current: any = colors
+    let current: unknown = colors
 
     for (const key of keys) {
       if (current && typeof current === 'object' && key in current) {
-        current = current[key]
+        current = (current as Record<string, unknown>)[key]
       } else {
         return fallback || '#000000'
       }

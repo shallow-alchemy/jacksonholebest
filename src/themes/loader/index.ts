@@ -70,7 +70,7 @@ export class ThemeLoader implements IThemeLoader {
   }
   
   private async loadThemeFromSource(id: string): Promise<Theme> {
-    let themeModule: any
+    let themeModule: { default?: Theme; [key: string]: unknown }
     
     switch (id) {
       case 'jackson-adventure':
@@ -93,6 +93,10 @@ export class ThemeLoader implements IThemeLoader {
     }
     
     const theme = themeModule.default
+    
+    if (!theme) {
+      throw new Error(`Theme '${id}' has no default export`)
+    }
     
     if (!this.validateTheme(theme)) {
       throw new Error(`Theme '${id}' failed validation`)
