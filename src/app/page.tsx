@@ -199,7 +199,7 @@ export default function HomePage() {
       </section>
 
       {/* Call to Action */}
-      <section className={styles.ctaSection}>
+      <section className={`footer ${styles.ctaSection}`}>
         <div className={styles.ctaContainer}>
           <h2 className={styles.ctaTitle}>
             Ready to Fuel Your Next Adventure?

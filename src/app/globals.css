@@ -147,12 +147,16 @@ a {
 
   /* Hero Image */
   --hero-image: url('/images/jackson-hole.jpg');
+
+  /* Footer */
+  --footer-background: var(--color-neutral-900);
 }
 
 /* Theme Classes */
 .theme-jackson-adventure {
   --background: #ffffff;
   --foreground: var(--color-neutral-900);
+  --footer-background: var(--color-neutral-900);
 }
 
 .theme-spring-meadow {
@@ -170,6 +174,7 @@ a {
   --color-primary-900: #14532d;
   --color-primary-950: #052e16;
   --hero-image: url('/images/tetons-spring.jpg');
+  --footer-background: var(--color-primary-800);
 }
 
 .theme-summer-alpine {
@@ -187,6 +192,7 @@ a {
   --color-primary-900: #064e3b;
   --color-primary-950: #022c22;
   --hero-image: url('/images/tetons-summer.jpg');
+  --footer-background: var(--color-primary-800);
 }
 
 .theme-autumn-harvest {
@@ -204,6 +210,7 @@ a {
   --color-primary-900: #74231c;
   --color-primary-950: #40100c;
   --hero-image: url('/images/tetons-autumn.jpg');
+  --footer-background: var(--color-primary-800);
 }
 
 .theme-winter-wonderland {
@@ -221,6 +228,7 @@ a {
   --color-primary-900: #0f172a;
   --color-primary-950: #020617;
   --hero-image: url('/images/tetons-winter.jpg');
+  --footer-background: var(--color-primary-700);
 }
 
 /* Global Utility Classes */
@@ -291,6 +299,10 @@ a {
 
 .card:hover {
   box-shadow: var(--shadow-lg);
+}
+
+.footer {
+  background: var(--footer-background);
 }
 
 /* Theme transitions */

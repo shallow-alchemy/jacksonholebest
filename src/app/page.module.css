@@ -250,7 +250,7 @@
 
 .ctaSection {
   padding: var(--spacing-5xl) 0;
-  background: linear-gradient(to right, var(--color-accent-500), #ef4444);
+  background: var(--footer-background);
 }
 
 .ctaContainer {
