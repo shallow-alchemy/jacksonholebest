@@ -193,7 +193,7 @@
       },
       "images": [
         {
-          "url": "/images/placeholder-restaurant.svg",
+          "url": "/images/hand-fire-pizza.jpg",
           "alt": "Hand Fire Pizza historic theater interior with wood-fired oven",
           "caption": "Pizza theater in the historic 1941 Teton Theater"
         }
@@ -262,7 +262,7 @@
       },
       "images": [
         {
-          "url": "/images/placeholder-restaurant.svg",
+          "url": "/images/cafe-genevieve.jpg",
           "alt": "Cafe Genevieve historic log cabin with outdoor patio",
           "caption": "Southern comfort food in a historic 1906 log cabin"
         }
@@ -331,7 +331,7 @@
       },
       "images": [
         {
-          "url": "/images/placeholder-restaurant.svg",
+          "url": "/images/picas.jpg",
           "alt": "Picas Mexican Taqueria casual dining room with Mexican decor",
           "caption": "Jackson's favorite authentic Mexican taqueria"
         }
@@ -400,7 +400,7 @@
       },
       "images": [
         {
-          "url": "/images/placeholder-restaurant.svg",
+          "url": "/images/snake-river-grill.jpg",
           "alt": "Snake River Grill rustic elegant dining room with fireplace",
           "caption": "30+ years of fine dining excellence on Town Square"
         }
@@ -469,7 +469,7 @@
       },
       "images": [
         {
-          "url": "/images/placeholder-restaurant.svg", 
+          "url": "/images/local.jpg", 
           "alt": "Local Restaurant & Bar contemporary western dining room",
           "caption": "Modern steakhouse with Town Square views"
         }
@@ -538,7 +538,7 @@
       },
       "images": [
         {
-          "url": "/images/placeholder-restaurant.svg",
+          "url": "/images/white-buffalo.jpg",
           "alt": "White Buffalo Club subterranean dining room with luminescent bar",
           "caption": "Jackson's intimate steakhouse speakeasy"
         }
@@ -607,7 +607,7 @@
       },
       "images": [
         {
-          "url": "/images/placeholder-restaurant.svg",
+          "url": "/images/kitchen.jpg",
           "alt": "The Kitchen modern American dining room",
           "caption": "Refined casual dining with Asian influences"
         }
@@ -676,7 +676,7 @@
       },
       "images": [
         {
-          "url": "/images/placeholder-restaurant.svg",
+          "url": "/images/blue-lion.jpg",
           "alt": "The Blue Lion historic house exterior with mountain views", 
           "caption": "Historic fine dining since 1976"
         }
@@ -744,7 +744,7 @@
       },
       "images": [
         {
-          "url": "/images/placeholder-restaurant.svg",
+          "url": "/images/noras.jpg",
           "alt": "Nora's Fish Creek Inn rustic log cabin exterior in Wilson",
           "caption": "James Beard Award-winning local institution since 1982"
         }
@@ -813,7 +813,7 @@
       },
       "images": [
         {
-          "url": "/images/placeholder-restaurant.svg",
+          "url": "/images/persephone.jpg",
           "alt": "Persephone Bakery French-style café interior with pastry display",
           "caption": "Artisan French bakery with old world techniques"
         }
@@ -882,7 +882,7 @@
       },
       "images": [
         {
-          "url": "/images/placeholder-restaurant.svg",
+          "url": "/images/bunnery.jpg",
           "alt": "The Bunnery Bakery Restaurant historic interior with bakery counter",
           "caption": "50 years of OSM pancakes and fresh-baked traditions"
         }
@@ -895,76 +895,6 @@
         "atmosphere": 4.0
       }
     },
-  
-    {
-      "id": "cafe-genevieve-breakfast",
-      "name": "Cafe Genevieve",
-      "slug": "cafe-genevieve-breakfast",
-      "categories": ["historic-cabin", "southern-brunch", "comfort-food"],
-      "priceLevel": 2,
-      "location": {
-        "address": "135 N Cache Street, Jackson, WY 83001",
-        "coordinates": [43.4799, -110.7624],
-        "distanceFromPark": "6 miles to Grand Teton National Park entrance"
-      },
-      "dining": {
-        "cuisine": "Southern-Inspired American, Comfort Food",
-        "dietaryOptions": ["vegetarian", "some gluten-free options"],
-        "reservations": "recommended for brunch",
-        "reservationLink": "https://genevievejh.com",
-        "averageMeal": "$12-22 per person"
-      },
-      "experience": {
-        "atmosphere": "Historic Log Cabin, Cozy Southern Comfort",
-        "bestFor": ["Pig Candy Bacon", "Fried Chicken & Waffles", "Outdoor Brunch", "Historic Setting"],
-        "specialties": ["Famous Pig Candy Bacon", "Fried Chicken & Waffles", "Cajun Eggs Benedict", "Biscuits & Cajun Gravy", "All-Day Brunch"]
-      },
-      "practical": {
-        "hours": {
-          "monday": "08:00-15:00",
-          "tuesday": "08:00-15:00",
-          "wednesday": "08:00-15:00",
-          "thursday": "08:00-15:00",
-          "friday": "08:00-15:00",
-          "saturday": "08:00-15:00",
-          "sunday": "08:00-15:00"
-        },
-        "phone": "+1-307-732-1910",
-        "website": "https://genevievejh.com"
-      },
-      "content": {
-        "description": "Housed in a historic 1906 log cabin just one block from Town Square, Cafe Genevieve serves 'inspired home cooked classics' with a Southern twist. This cozy brunch destination is famous for its Pig Candy bacon and Southern comfort food in a setting under 110-year-old cottonwood trees.",
-        "highlights": [
-          "Historic 1906 log cabin - one of Jackson's few remaining original structures",
-          "Famous 'Pig Candy' bacon - thick applewood smoked with sugar and spices",
-          "Featured on Guy Fieri's Diners, Drive-Ins and Dives",
-          "All-day brunch served until 3pm - perfect for late risers",
-          "Beautiful outdoor patio under century-old cottonwood trees"
-        ],
-        "tips": [
-          "Must-order the Pig Candy bacon - it's legendary and addictive",
-          "Brunch served all day until 3pm - great for sleeping in",
-          "Historic log cabin atmosphere adds charm to the meal",
-          "Outdoor patio is beautiful in summer under the old trees",
-          "Southern comfort food with Wyoming touches - unique combination"
-        ]
-      },
-      "images": [
-        {
-          "url": "/images/placeholder-restaurant.svg",
-          "alt": "Cafe Genevieve historic log cabin with outdoor patio dining",
-          "caption": "Southern comfort brunch in a historic 1906 log cabin"
-        }
-      ],
-      "rating": {
-        "overall": 4.2,
-        "food": 4.3,
-        "service": 4.1,
-        "value": 4.0,
-        "atmosphere": 4.4
-      }
-    },
-  
     {
       "id": "snake-river-roasting-company",
       "name": "Snake River Roasting Company",
@@ -1020,7 +950,7 @@
       },
       "images": [
         {
-          "url": "/images/placeholder-restaurant.svg",
+          "url": "/images/snake-river-roasting.jpg",
           "alt": "Snake River Roasting Company modern coffee shop interior",
           "caption": "Award-winning local coffee roastery near Town Square"
         }
@@ -1088,7 +1018,7 @@
       },
       "images": [
         {
-          "url": "/images/placeholder-restaurant.svg",
+          "url": "/images/pinky.jpg",
           "alt": "Pinky G's Pizzeria casual dining room with live music stage",
           "caption": "New York-style pizza and late-night vibes since 2011"
         }
@@ -1157,7 +1087,7 @@
       },
       "images": [
         {
-          "url": "/images/placeholder-restaurant.svg",
+          "url": "/images/liberty.jpg",
           "alt": "Liberty Burger casual dining interior with Western touches",
           "caption": "Texas-grown quality meets Wyoming values"
         }
@@ -1226,7 +1156,7 @@
       },
       "images": [
         {
-          "url": "/images/placeholder-restaurant.svg",
+          "url": "/images/pearl.jpg",
           "alt": "Pearl Street Bagels shop interior with bagel display",
           "caption": "35 years of authentic East Coast bagel tradition"
         }
@@ -1295,7 +1225,7 @@
       },
       "images": [
         {
-          "url": "/images/placeholder-restaurant.svg",
+          "url": "/images/cowboy.jpg",
           "alt": "Cowboy Coffee Co. rustic interior with local art and comfortable seating",
           "caption": "Wyoming's best coffee shop for over 20 years"
         }
@@ -1364,7 +1294,7 @@
       },
       "images": [
         {
-          "url": "/images/placeholder-restaurant.svg",
+          "url": "/images/teton-tiger.jpg",
           "alt": "Teton Tiger modern Asian fusion restaurant interior with stylish bar",
           "caption": "Pan-Asian fusion with mountain flair"
         }
@@ -1420,7 +1350,7 @@
       },
       "images": [
         {
-          "url": "/images/placeholder-restaurant.svg",
+          "url": "/images/bin22.jpg",
           "alt": "Bin22 wine bar interior with warm wood surroundings",
           "caption": "Sophisticated wine bar experience in downtown Jackson"
         }
@@ -1476,7 +1406,7 @@
       },
       "images": [
         {
-          "url": "/images/placeholder-restaurant.svg",
+          "url": "/images/handle-bar.jpg",
           "alt": "Handle Bar interior with mountain views and rustic elegance",
           "caption": "Elevated après-ski dining with Teton Range views"
         }
@@ -1532,7 +1462,7 @@
       },
       "images": [
         {
-          "url": "/images/placeholder-restaurant.svg",
+          "url": "/images/gather.jpg",
           "alt": "Gather restaurant interior with modern design and mountain views",
           "caption": "Creative cuisine with stunning Snow King Mountain backdrop"
         }
