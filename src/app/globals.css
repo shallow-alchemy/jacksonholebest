@@ -148,6 +148,9 @@ a {
   /* Hero Image */
   --hero-image: url('/images/jackson-hole.jpg');
 
+  /* Restaurant Hero Image */
+  --restaurants-hero-image: url('/images/jackson-hole-river.jpg');
+
   /* Footer */
   --footer-background: var(--color-neutral-900);
 }
@@ -174,6 +177,7 @@ a {
   --color-primary-900: #14532d;
   --color-primary-950: #052e16;
   --hero-image: url('/images/tetons-spring.jpg');
+  --restaurants-hero-image: url('/images/jackson-hole-river-spring.jpg');
   --footer-background: var(--color-primary-800);
 }
 
@@ -192,6 +196,7 @@ a {
   --color-primary-900: #064e3b;
   --color-primary-950: #022c22;
   --hero-image: url('/images/tetons-summer.jpg');
+  --restaurants-hero-image: url('/images/jackson-hole-river-summer.jpg');
   --footer-background: var(--color-primary-800);
 }
 
@@ -210,6 +215,7 @@ a {
   --color-primary-900: #74231c;
   --color-primary-950: #40100c;
   --hero-image: url('/images/tetons-autumn.jpg');
+  --restaurants-hero-image: url('/images/jackson-hole-river-autumn.jpg');
   --footer-background: var(--color-primary-800);
 }
 
@@ -228,6 +234,7 @@ a {
   --color-primary-900: #0f172a;
   --color-primary-950: #020617;
   --hero-image: url('/images/tetons-winter.jpg');
+  --restaurants-hero-image: url('/images/jackson-hole-river-winter.jpg');
   --footer-background: var(--color-primary-700);
 }
 

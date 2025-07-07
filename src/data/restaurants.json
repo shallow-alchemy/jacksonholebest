@@ -1,0 +1,1549 @@
+{
+  "restaurants": [
+    {
+      "id": "calico-restaurant-bar",
+      "name": "Calico Restaurant & Bar",
+      "slug": "calico-restaurant-bar",
+      "categories": ["family-favorite", "casual-dining", "outdoor-play"],
+      "priceLevel": 2,
+      "location": {
+        "address": "2620 Moose-Wilson Road, Wilson, WY 83014",
+        "coordinates": [43.4799, -110.7624],
+        "distanceFromPark": "8 miles to Grand Teton National Park"
+      },
+      "dining": {
+        "cuisine": "American-Italian, Pizza & Pasta",
+        "dietaryOptions": ["vegetarian", "vegan options", "gluten-free"],
+        "reservations": "recommended for dinner",
+        "reservationLink": "https://www.calicorestaurant.com",
+        "averageMeal": "$15-25 per person"
+      },
+      "experience": {
+        "atmosphere": "Casual Family-Friendly, Rustic Lodge",
+        "bestFor": ["Families with Kids", "Outdoor Dining", "Summer Evenings", "Groups"],
+        "specialties": ["Hand-thrown Pizza", "Italian Specialties", "1.5-acre Lawn for Kids", "Local Grass-fed Beef", "Outdoor Deck Dining"]
+      },
+      "practical": {
+        "hours": {
+          "monday": "17:00-21:00",
+          "tuesday": "17:00-21:00",
+          "wednesday": "17:00-21:00",
+          "thursday": "17:00-21:00",
+          "friday": "17:00-22:00",
+          "saturday": "17:00-22:00",
+          "sunday": "17:00-21:00"
+        },
+        "phone": "+1-307-733-2460",
+        "website": "https://www.calicorestaurant.com"
+      },
+      "content": {
+        "description": "Jackson Hole's ultimate family destination since 1966, Calico offers the perfect combination of great Italian-American food and a massive 1.5-acre lawn where kids can play safely while parents dine on the outdoor deck. This beloved Wilson institution features hand-thrown pizzas, locally-sourced dishes, and an atmosphere where families can truly relax.",
+        "highlights": [
+          "1.5-acre fenced lawn with game balls - kids can play while parents eat",
+          "Operating since 1966 - Jackson Hole's oldest family restaurant tradition",
+          "Hand-thrown pizzas made fresh with local, sustainable ingredients",
+          "Large outdoor deck perfect for families in summer months",
+          "Locally raised, grass-fed beef and free-range organic chicken"
+        ],
+        "tips": [
+          "Summer is peak season - the outdoor lawn and deck are what make this special",
+          "Perfect spot for families - kids can burn energy while parents enjoy dinner",
+          "Try the famous bruschetta and homemade lasagna",
+          "Located in Wilson - more relaxed than busy Jackson restaurants",
+          "Great for large family groups and celebrations"
+        ]
+      },
+      "images": [
+        {
+          "url": "/images/placeholder-restaurant.svg",
+          "alt": "Calico Restaurant outdoor deck with kids playing on large lawn",
+          "caption": "Family paradise with 1.5 acres for kids to play"
+        }
+      ],
+      "rating": {
+        "overall": 4.2,
+        "food": 4.1,
+        "service": 4.0,
+        "value": 4.4,
+        "atmosphere": 4.6
+      }
+    },
+  
+    {
+      "id": "snake-river-brewing",
+      "name": "Snake River Brewing",
+      "slug": "snake-river-brewing",
+      "categories": ["family-favorite", "local-hangout", "casual-dining"],
+      "priceLevel": 2,
+      "location": {
+        "address": "265 S Millward Street, Jackson, WY 83001",
+        "coordinates": [43.4799, -110.7624],
+        "distanceFromPark": "5 miles to Grand Teton National Park"
+      },
+      "dining": {
+        "cuisine": "American Brewpub, Comfort Food",
+        "dietaryOptions": ["vegetarian", "some gluten-free options"],
+        "reservations": "first come, first served - no reservations",
+        "reservationLink": "No reservations - walk-in only",
+        "averageMeal": "$12-20 per person"
+      },
+      "experience": {
+        "atmosphere": "High-Energy Brewpub, Family-Friendly Upstairs",
+        "bestFor": ["Families", "Post-Adventure Meals", "Local Beer", "Casual Groups", "Game Day"],
+        "specialties": ["Wyoming's Oldest Craft Brewery", "12 Beer Taps", "Bison & Beef Chili", "Wood-fired Pizzas", "Game Room & Outdoor Lawn"]
+      },
+      "practical": {
+        "hours": {
+          "monday": "11:00-22:00",
+          "tuesday": "11:00-22:00",
+          "wednesday": "11:00-22:00",
+          "thursday": "11:00-22:00",
+          "friday": "11:00-23:00",
+          "saturday": "09:00-23:00",
+          "sunday": "09:00-22:00"
+        },
+        "phone": "+1-307-739-2337",
+        "website": "https://www.snakeriverbrewing.com"
+      },
+      "content": {
+        "description": "Wyoming's oldest and America's most award-winning small craft brewery doubles as one of Jackson's best family restaurants. The large, high-ceilinged space features a designated family dining area upstairs, game room, outdoor lawn with cornhole, and hearty comfort food that satisfies both kids and adults after outdoor adventures.",
+        "highlights": [
+          "Wyoming's oldest craft brewery - 12 award-winning beers on tap",
+          "Designated family dining area upstairs away from bar crowd",
+          "Famous Wyoming bison & beef chili and wood-fired pizzas",
+          "Large outdoor lawn with cornhole and casual seating",
+          "Weekend brunch with $25 bottomless bloody marys and mimosas"
+        ],
+        "tips": [
+          "Upstairs dining area is more family-friendly than main floor bar",
+          "No reservations - arrive early during peak times",
+          "Perfect after hiking or skiing - hearty portions for hungry families",
+          "Kids love the game room and outdoor lawn activities",
+          "Local favorite - great place to experience authentic Jackson atmosphere"
+        ]
+      },
+      "images": [
+        {
+          "url": "/images/placeholder-restaurant.svg",
+          "alt": "Snake River Brewing family dining area with mountain views",
+          "caption": "Local brewpub with family-friendly upstairs dining"
+        }
+      ],
+      "rating": {
+        "overall": 4.1,
+        "food": 4.0,
+        "service": 4.1,
+        "value": 4.3,
+        "atmosphere": 4.2
+      }
+    },
+  
+    {
+      "id": "hand-fire-pizza",
+      "name": "Hand Fire Pizza",
+      "slug": "hand-fire-pizza",
+      "categories": ["family-favorite", "casual-dining", "historic"],
+      "priceLevel": 2,
+      "location": {
+        "address": "120 N Cache Street, Jackson, WY 83001",
+        "coordinates": [43.4799, -110.7624],
+        "distanceFromPark": "6 miles to Grand Teton National Park"
+      },
+      "dining": {
+        "cuisine": "Wood-fired Pizza, Salads",
+        "dietaryOptions": ["vegetarian", "vegan", "gluten-free crust available"],
+        "reservations": "parties of 20+ only, otherwise waitlist",
+        "reservationLink": "https://handfirepizza.com",
+        "averageMeal": "$15-25 per person"
+      },
+      "experience": {
+        "atmosphere": "Historic Theater, Family-Friendly, Open Kitchen",
+        "bestFor": ["Families", "Large Groups", "Historic Ambiance", "Pizza Lovers"],
+        "specialties": ["100% Wood-fired Pizza", "Historic Teton Theater Setting", "Organic Local Ingredients", "Open Kitchen Experience", "Family-Size Groups"]
+      },
+      "practical": {
+        "hours": {
+          "monday": "11:30-21:00",
+          "tuesday": "11:30-21:00",
+          "wednesday": "11:30-21:00",
+          "thursday": "11:30-21:00",
+          "friday": "11:30-21:00",
+          "saturday": "11:30-21:00",
+          "sunday": "11:30-21:00"
+        },
+        "phone": "+1-307-733-7199",
+        "website": "https://handfirepizza.com"
+      },
+      "content": {
+        "description": "Located in the beautifully restored historic Teton Theater (built 1941), Hand Fire Pizza offers families a unique dining experience watching chefs create 100% wood-fired pizzas in an open kitchen. The spacious two-story venue easily accommodates large families and groups, with kids fascinated by the theater setting and pizza-making process.",
+        "highlights": [
+          "Historic 1941 Teton Theater restored with original marquee and ticket booth",
+          "100% wood-fired oven with open kitchen - kids love watching pizza making",
+          "Organic, locally-sourced ingredients with gluten-free and vegan options",
+          "Sprawling space perfect for large families - can accommodate up to 250 guests",
+          "Tuesday 'Pizza for a Purpose' nights supporting local non-profits"
+        ],
+        "tips": [
+          "Kids are mesmerized watching the open kitchen and wood-fired oven",
+          "Historic theater setting makes this a unique Jackson experience",
+          "Great for large family groups - one of few restaurants that handles big parties well",
+          "Try The Meatbawls pizza - made with local Jackson Hole Hereford Ranch beef",
+          "Use waitlist system online or call 30-40 minutes before arrival"
+        ]
+      },
+      "images": [
+        {
+          "url": "/images/placeholder-restaurant.svg",
+          "alt": "Hand Fire Pizza historic theater interior with wood-fired oven",
+          "caption": "Pizza theater in the historic 1941 Teton Theater"
+        }
+      ],
+      "rating": {
+        "overall": 4.3,
+        "food": 4.4,
+        "service": 4.2,
+        "value": 4.1,
+        "atmosphere": 4.6
+      }
+    },
+  
+    {
+      "id": "cafe-genevieve",
+      "name": "Cafe Genevieve",
+      "slug": "cafe-genevieve",
+      "categories": ["family-favorite", "breakfast-lunch", "historic"],
+      "priceLevel": 2,
+      "location": {
+        "address": "135 N Cache Street, Jackson, WY 83001",
+        "coordinates": [43.4799, -110.7624],
+        "distanceFromPark": "6 miles to Grand Teton National Park"
+      },
+      "dining": {
+        "cuisine": "Southern-Inspired American, Home Cooking",
+        "dietaryOptions": ["vegetarian", "some gluten-free options"],
+        "reservations": "recommended for brunch",
+        "reservationLink": "https://genevievejh.com",
+        "averageMeal": "$12-22 per person"
+      },
+      "experience": {
+        "atmosphere": "Historic Log Cabin, Cozy & Welcoming",
+        "bestFor": ["Family Breakfast", "Brunch", "Comfort Food", "Historic Dining"],
+        "specialties": ["Famous Pig Candy Bacon", "Fried Chicken & Waffles", "Huevos Rancheros", "Historic 1906 Log Cabin", "Southern Comfort Food"]
+      },
+      "practical": {
+        "hours": {
+          "monday": "08:00-15:00",
+          "tuesday": "08:00-15:00",
+          "wednesday": "08:00-15:00",
+          "thursday": "08:00-15:00",
+          "friday": "08:00-15:00",
+          "saturday": "08:00-15:00",
+          "sunday": "08:00-15:00"
+        },
+        "phone": "+1-307-732-1910",
+        "website": "https://genevievejh.com"
+      },
+      "content": {
+        "description": "Housed in a historic 1906 log cabin just one block from Town Square, Cafe Genevieve serves 'inspired home cooked classics' that bring Southern comfort food to Wyoming. This cozy family favorite features outdoor dining under 110-year-old cottonwood trees and is famous for its Pig Candy bacon and family-friendly atmosphere.",
+        "highlights": [
+          "Historic 1906 log cabin - one of Jackson's few remaining original residential structures",
+          "Famous 'Pig Candy' bacon that kids and adults love",
+          "Featured on Guy Fieri's Diners, Drive-Ins and Dives",
+          "Beautiful outdoor patio dining under century-old cottonwood trees",
+          "Southern-inspired comfort food made with local, seasonal ingredients"
+        ],
+        "tips": [
+          "Must-try the famous Pig Candy bacon - it's a Jackson Hole legend",
+          "Great for families with kids - comfortable, welcoming atmosphere",
+          "Outdoor patio dining is beautiful in summer under the old trees",
+          "Perfect for breakfast or brunch before outdoor adventures",
+          "Historic setting adds charm - kids love the log cabin atmosphere"
+        ]
+      },
+      "images": [
+        {
+          "url": "/images/placeholder-restaurant.svg",
+          "alt": "Cafe Genevieve historic log cabin with outdoor patio",
+          "caption": "Southern comfort food in a historic 1906 log cabin"
+        }
+      ],
+      "rating": {
+        "overall": 4.2,
+        "food": 4.3,
+        "service": 4.1,
+        "value": 4.0,
+        "atmosphere": 4.4
+      }
+    },
+  
+    {
+      "id": "picas-mexican-taqueria",
+      "name": "Pica's Mexican Taqueria",
+      "slug": "picas-mexican-taqueria",
+      "categories": ["family-favorite", "casual-dining", "mexican"],
+      "priceLevel": 2,
+      "location": {
+        "address": "1160 Alpine Lane, Jackson, WY 83001",
+        "coordinates": [43.4799, -110.7624],
+        "distanceFromPark": "6 miles to Grand Teton National Park"
+      },
+      "dining": {
+        "cuisine": "Authentic Mexican, Taqueria",
+        "dietaryOptions": ["vegetarian", "vegan options", "whole wheat tortillas"],
+        "reservations": "not required - casual dining",
+        "reservationLink": "https://www.picastaqueria.com",
+        "averageMeal": "$10-18 per person"
+      },
+      "experience": {
+        "atmosphere": "Casual Mexican, Family-Friendly",
+        "bestFor": ["Families", "Quick Casual Dining", "Authentic Mexican", "Large Portions"],
+        "specialties": ["Voted Best Mexican Food in Jackson", "Famous Margaritas", "Massive Burritos", "Homemade Tortillas", "Featured on Food Network"]
+      },
+      "practical": {
+        "hours": {
+          "monday": "11:00-21:00",
+          "tuesday": "11:00-21:00",
+          "wednesday": "11:00-21:00",
+          "thursday": "11:00-21:00",
+          "friday": "11:00-21:00",
+          "saturday": "11:00-21:00",
+          "sunday": "11:00-21:00"
+        },
+        "phone": "+1-307-734-4457",
+        "website": "https://www.picastaqueria.com"
+      },
+      "content": {
+        "description": "Voted best Mexican food in Jackson Hole multiple years running, Pica's offers authentic Mexican cuisine in a casual, family-friendly atmosphere. This local favorite serves massive portions that often stretch into two meals, making it perfect for families. Featured on Guy Fieri's Diners, Drive-Ins and Dives for their authentic flavors.",
+        "highlights": [
+          "Voted Best Mexican Food and Best Margaritas in Jackson multiple years",
+          "Featured on Guy Fieri's Diners, Drive-Ins and Dives",
+          "Massive burrito portions - often enough for two meals",
+          "Homemade tortillas and authentic Mexican preparations",
+          "Casual atmosphere perfect for families with kids"
+        ],
+        "tips": [
+          "Order burritos 'wet' for chipotle enchilada sauce and toppings",
+          "Portions are huge - consider sharing or plan for leftovers",
+          "Great for takeout - perfect for post-adventure fuel",
+          "Try the famous sopes de chicken tinga featured on Food Network",
+          "Casual strip-mall location - don't be fooled by appearance, food is exceptional"
+        ]
+      },
+      "images": [
+        {
+          "url": "/images/placeholder-restaurant.svg",
+          "alt": "Picas Mexican Taqueria casual dining room with Mexican decor",
+          "caption": "Jackson's favorite authentic Mexican taqueria"
+        }
+      ],
+      "rating": {
+        "overall": 3.8,
+        "food": 4.2,
+        "service": 3.6,
+        "value": 4.4,
+        "atmosphere": 3.5
+      }
+    },
+  
+    {
+      "id": "snake-river-grill",
+      "name": "Snake River Grill",
+      "slug": "snake-river-grill",
+      "categories": ["celebration-dinners", "fine-dining", "local-favorite"],
+      "priceLevel": 4,
+      "location": {
+        "address": "84 E Broadway, Jackson, WY 83001",
+        "coordinates": [43.4799, -110.7624],
+        "distanceFromPark": "6 miles to Grand Teton National Park entrance"
+      },
+      "dining": {
+        "cuisine": "New American, Modern American Grill",
+        "dietaryOptions": ["vegetarian", "vegan", "gluten-free"],
+        "reservations": "highly recommended",
+        "reservationLink": "https://www.opentable.com/r/snake-river-grill",
+        "averageMeal": "$45-75 per person"
+      },
+      "experience": {
+        "atmosphere": "Rustic Elegant, Hunting Lodge Aesthetic",
+        "bestFor": ["Special Occasions", "Date Night", "Business Dinners", "Wine Enthusiasts"],
+        "specialties": ["Steak Tartare Pizza", "New York Strip", "Wood-fired Focaccia", "Seasonal Game", "300+ Wine Selection"]
+      },
+      "practical": {
+        "hours": {
+          "monday": "17:00-21:00",
+          "tuesday": "17:00-21:00", 
+          "wednesday": "17:00-21:00",
+          "thursday": "17:00-21:00",
+          "friday": "17:00-21:00",
+          "saturday": "17:00-21:00",
+          "sunday": "closed"
+        },
+        "phone": "+1-307-733-0557",
+        "website": "https://www.snakerivergrill.com"
+      },
+      "content": {
+        "description": "Celebrating over 30 years on Jackson's Town Square, Snake River Grill remains the locals' favorite fine dining destination. Founded by Hollywood executive Alan Hirschfield (former CEO of Columbia Pictures and 20th Century Fox), this rustic-elegant establishment showcases the best of New American cuisine in a hunting lodge atmosphere complete with roaring fireplace and white linens.",
+        "highlights": [
+          "3x James Beard nominated chef Addison Fleming leading the kitchen",
+          "300+ wine selection with Wine Spectator Award of Excellence",
+          "Famous Steak Tartare Pizza - a cold appetizer with Black Angus NY strip",
+          "Private dining room for up to 16 guests",
+          "Historic Town Square location with outdoor patio dining"
+        ],
+        "tips": [
+          "Make reservations well in advance - this is Jackson's busiest fine dining spot",
+          "Start at the intimate bar for signature cocktails and spicy bar nuts",
+          "Don't miss the Steak Tartare Pizza - it's served cold and is a signature dish",
+          "Ask about seasonal specials featuring local farms like Canewater Farm",
+          "Expect a bustling, energetic atmosphere - not quiet romantic dining"
+        ]
+      },
+      "images": [
+        {
+          "url": "/images/placeholder-restaurant.svg",
+          "alt": "Snake River Grill rustic elegant dining room with fireplace",
+          "caption": "30+ years of fine dining excellence on Town Square"
+        }
+      ],
+      "rating": {
+        "overall": 4.4,
+        "food": 4.3,
+        "service": 4.5,
+        "value": 3.8,
+        "atmosphere": 4.6
+      }
+    },
+    
+    {
+      "id": "local-restaurant-bar",
+      "name": "Local Restaurant & Bar", 
+      "slug": "local-restaurant-bar",
+      "categories": ["fine-dining", "steakhouse", "local-favorite"],
+      "priceLevel": 4,
+      "location": {
+        "address": "55 North Cache Street, Jackson, WY 83001",
+        "coordinates": [43.4799, -110.7624],
+        "distanceFromPark": "6 miles to Grand Teton National Park entrance"
+      },
+      "dining": {
+        "cuisine": "Modern American Steakhouse",
+        "dietaryOptions": ["vegetarian", "some gluten-free options"],
+        "reservations": "recommended",
+        "reservationLink": "Call restaurant directly",
+        "averageMeal": "$40-65 per person"
+      },
+      "experience": {
+        "atmosphere": "Contemporary Western, Casual Vibrant Bar",
+        "bestFor": ["Steak Dinners", "Business Lunch", "Drinks on Town Square", "Groups"],
+        "specialties": ["Dry-aged Steaks", "House-made Sausages", "Bison Burger", "In-house Butchery", "Local Game", "12 Beers on Tap"]
+      },
+      "practical": {
+        "hours": {
+          "monday": "11:30-22:00",
+          "tuesday": "11:30-22:00",
+          "wednesday": "11:30-22:00", 
+          "thursday": "11:30-22:00",
+          "friday": "11:30-23:00",
+          "saturday": "11:30-23:00",
+          "sunday": "11:30-22:00"
+        },
+        "phone": "+1-307-201-1717",
+        "website": "https://www.localjh.com"
+      },
+      "content": {
+        "description": "A modern American steakhouse on Jackson's historic Town Square, Local showcases the passion of chef-owners Will Bradof (Trio) and his wife Jennifer for reviving the craft of in-house butchery. Watch the action on the Town Square while enjoying dry-aged steaks, house-made sausages, and locally-ranched meats in a contemporary western setting.",
+        "highlights": [
+          "In-house butchery with focus on dry-aged steaks and house-made sausages",
+          "Locally-ranched meats and wild game alongside fresh seafood",
+          "Contemporary western design with Town Square views",
+          "Casual vibrant bar atmosphere with 12 local beers on tap",
+          "Private dining room overlooking antler arches for up to 30 seated"
+        ],
+        "tips": [
+          "Perfect spot for lunch burgers or dinner steaks while people-watching",
+          "Try the famous bison burger - consistently rated as one of Jackson's best",
+          "Extensive wine list pairs perfectly with their dry-aged steaks",
+          "Great for groups with both casual bar seating and formal dining room",
+          "Ask about their house-made sausages - a specialty of the in-house butchery"
+        ]
+      },
+      "images": [
+        {
+          "url": "/images/placeholder-restaurant.svg", 
+          "alt": "Local Restaurant & Bar contemporary western dining room",
+          "caption": "Modern steakhouse with Town Square views"
+        }
+      ],
+      "rating": {
+        "overall": 4.3,
+        "food": 4.4,
+        "service": 4.1,
+        "value": 4.0,
+        "atmosphere": 4.4
+      }
+    },
+  
+    {
+      "id": "white-buffalo-club",
+      "name": "The White Buffalo Club",
+      "slug": "white-buffalo-club", 
+      "categories": ["fine-dining", "steakhouse", "wine-bar"],
+      "priceLevel": 4,
+      "location": {
+        "address": "55 N Glenwood St, Jackson, WY 83001",
+        "coordinates": [43.4799, -110.7624],
+        "distanceFromPark": "6 miles to Grand Teton National Park entrance"
+      },
+      "dining": {
+        "cuisine": "USDA Prime Steakhouse",
+        "dietaryOptions": ["some vegetarian", "gluten-free options available"],
+        "reservations": "highly recommended",
+        "reservationLink": "https://www.whitebuffaloclub.com",
+        "averageMeal": "$55-85 per person"
+      },
+      "experience": {
+        "atmosphere": "Subterranean Speakeasy, Intimate & Cozy",
+        "bestFor": ["Special Occasions", "Steak Connoisseurs", "Wine Enthusiasts", "Date Night"],
+        "specialties": ["USDA Prime Steaks", "28-day Wet-aged", "Dry-aged Specials", "1,100+ Vintage Wine Bottles", "Luminescent Bar"]
+      },
+      "practical": {
+        "hours": {
+          "monday": "17:00-22:00",
+          "tuesday": "17:00-22:00",
+          "wednesday": "17:00-22:00",
+          "thursday": "17:00-22:00", 
+          "friday": "17:00-22:00",
+          "saturday": "17:00-22:00",
+          "sunday": "17:00-22:00"
+        },
+        "phone": "+1-307-733-5027",
+        "website": "https://www.whitebuffaloclub.com"
+      },
+      "content": {
+        "description": "Jackson's best kept secret steakhouse features a subterranean speakeasy atmosphere with 16 intimate dining tables surrounding a luminescent bar. Specializing in top 2% USDA Prime steaks that are 28-day wet-aged and butchered in-house, with frequent dry-aged specials and an impressive 1,100-bottle vintage wine collection.",
+        "highlights": [
+          "Top 2% USDA Prime steaks, 28-day wet-aged and butchered in-house",
+          "Subterranean speakeasy atmosphere with intimate corner booths",
+          "1,100+ vintage wine bottles - extensive collection",
+          "Frequent dry-aged steak specials",
+          "Luminescent bar perfect for craft cocktails and whiskey sours"
+        ],
+        "tips": [
+          "Make reservations well in advance - locals call this 'Jackson's best kept secret'",
+          "Ask about the dry-aged steak specials - they appear frequently",
+          "Cozy corner booths are perfect for intimate dinners",
+          "Excellent whiskey selection to pair with your steak",
+          "More intimate and quiet than other Jackson steakhouses"
+        ]
+      },
+      "images": [
+        {
+          "url": "/images/placeholder-restaurant.svg",
+          "alt": "White Buffalo Club subterranean dining room with luminescent bar",
+          "caption": "Jackson's intimate steakhouse speakeasy"
+        }
+      ],
+      "rating": {
+        "overall": 4.5,
+        "food": 4.6,
+        "service": 4.4,
+        "value": 3.9,
+        "atmosphere": 4.7
+      }
+    },
+  
+    {
+      "id": "the-kitchen-jackson-hole",
+      "name": "The Kitchen",
+      "slug": "the-kitchen-jackson-hole",
+      "categories": ["fine-dining", "modern-american", "local-favorite"],
+      "priceLevel": 3,
+      "location": {
+        "address": "155 N Glenwood St, Jackson, WY 83001", 
+        "coordinates": [43.4799, -110.7624],
+        "distanceFromPark": "6 miles to Grand Teton National Park entrance"
+      },
+      "dining": {
+        "cuisine": "Modern American with Asian Influence",
+        "dietaryOptions": ["vegetarian", "vegan", "gluten-free"],
+        "reservations": "recommended",
+        "reservationLink": "https://www.thekitchenjacksonhole.com",
+        "averageMeal": "$35-55 per person"
+      },
+      "experience": {
+        "atmosphere": "Refined yet Casual, Clean & Modern",
+        "bestFor": ["Date Night", "Family Dinners", "Fresh Seafood", "Asian-Fusion Lovers"],
+        "specialties": ["Fresh Fish", "Asian-influenced Dishes", "Seasonal Meats", "Modern American Comfort Food", "Fine Dining Group Quality"]
+      },
+      "practical": {
+        "hours": {
+          "monday": "17:00-21:30",
+          "tuesday": "17:00-21:30",
+          "wednesday": "17:00-21:30",
+          "thursday": "17:00-21:30",
+          "friday": "17:00-22:00",
+          "saturday": "17:00-22:00",
+          "sunday": "17:00-21:30"
+        },
+        "phone": "+1-307-734-1633",
+        "website": "https://www.thekitchenjacksonhole.com"
+      },
+      "content": {
+        "description": "Part of the acclaimed Fine Dining Restaurant Group, The Kitchen provides a refined yet casual dining experience featuring modern American cuisine with Asian influences. With a commitment to simplicity and clean presentation, this restaurant showcases fresh fish, seasonal meats, and comforting dishes with artful presentation.",
+        "highlights": [
+          "Part of Fine Dining Restaurant Group's collection of award-winning restaurants",
+          "Modern American cuisine with subtle Asian influences",
+          "Emphasis on fresh fish and seasonal ingredients",
+          "Clean, uncomplicated presentation with exquisite flavors",
+          "More casual atmosphere than typical Jackson fine dining"
+        ],
+        "tips": [
+          "Great option for those wanting fine dining quality in a more relaxed setting",
+          "Ask about the fresh fish specials - they're a restaurant specialty",
+          "Asian-influenced dishes offer unique flavors not found elsewhere in Jackson",
+          "Good choice for families who want upscale food without stuffy atmosphere",
+          "Part of restaurant group that includes Bin22 and The Bistro"
+        ]
+      },
+      "images": [
+        {
+          "url": "/images/placeholder-restaurant.svg",
+          "alt": "The Kitchen modern American dining room",
+          "caption": "Refined casual dining with Asian influences"
+        }
+      ],
+      "rating": {
+        "overall": 4.2,
+        "food": 4.3,
+        "service": 4.2,
+        "value": 4.1,
+        "atmosphere": 4.0
+      }
+    },
+  
+    {
+      "id": "blue-lion-restaurant",
+      "name": "The Blue Lion",
+      "slug": "blue-lion-restaurant",
+      "categories": ["fine-dining", "historic", "local-favorite"],
+      "priceLevel": 4,
+      "location": {
+        "address": "160 N Millward St, Jackson, WY 83001",
+        "coordinates": [43.4799, -110.7624], 
+        "distanceFromPark": "6 miles to Grand Teton National Park entrance"
+      },
+      "dining": {
+        "cuisine": "New American, Game Specialties",
+        "dietaryOptions": ["vegetarian", "some gluten-free"],
+        "reservations": "highly recommended", 
+        "reservationLink": "https://www.bluelionrestaurant.com",
+        "averageMeal": "$45-70 per person"
+      },
+      "experience": {
+        "atmosphere": "Historic House, Intimate & Romantic",
+        "bestFor": ["Date Night", "Special Occasions", "Game Enthusiasts", "Historic Dining"],
+        "specialties": ["Herb-crusted Rack of Lamb", "Wild Game Options", "Fresh Fish", "Seasonal Local Dishes", "Historic Setting Since 1976"]
+      },
+      "practical": {
+        "hours": {
+          "monday": "17:30-21:30",
+          "tuesday": "17:30-21:30",
+          "wednesday": "17:30-21:30", 
+          "thursday": "17:30-21:30",
+          "friday": "17:30-22:00",
+          "saturday": "17:30-22:00",
+          "sunday": "17:30-21:30"
+        },
+        "phone": "+1-307-733-3912",
+        "website": "https://www.bluelionrestaurant.com"
+      },
+      "content": {
+        "description": "Set in a charming historic house near Miller Park, The Blue Lion has been a local's favorite fine dining destination since 1976. This intimate restaurant offers nearly 50 years of culinary excellence, featuring their legendary herb-crusted rack of lamb, wild game options, and seasonal local dishes in a romantic historic setting.",
+        "highlights": [
+          "Operating since 1976 - nearly 50 years of fine dining tradition",
+          "Set in a charming historic house for intimate dining",
+          "Famous herb-crusted rack of lamb - the most popular menu item",
+          "Diverse chef-driven menu with game, fish, and seasonal specialties",
+          "House-crafted cocktails and extensive wine list"
+        ],
+        "tips": [
+          "The herb-crusted rack of lamb is legendary - definitely try it",
+          "Historic house setting makes this perfect for romantic dinners",
+          "Off the beaten path near Miller Park - quieter than Town Square options",
+          "Nearly 50 years of operation means they've perfected their craft",
+          "Great choice for special occasions and celebrations"
+        ]
+      },
+      "images": [
+        {
+          "url": "/images/placeholder-restaurant.svg",
+          "alt": "The Blue Lion historic house exterior with mountain views", 
+          "caption": "Historic fine dining since 1976"
+        }
+      ],
+      "rating": {
+        "overall": 4.4,
+        "food": 4.5,
+        "service": 4.3,
+        "value": 4.0,
+        "atmosphere": 4.6
+      }
+    },
+    {
+      "id": "noras-fish-creek-inn",
+      "name": "Nora's Fish Creek Inn",
+      "slug": "noras-fish-creek-inn",
+      "categories": ["breakfast-favorite", "local-institution", "james-beard-award"],
+      "priceLevel": 2,
+      "location": {
+        "address": "5600 Wyoming 22, Wilson, WY 83014",
+        "coordinates": [43.4919, -110.8644],
+        "distanceFromPark": "12 miles to Grand Teton National Park entrance"
+      },
+      "dining": {
+        "cuisine": "American Diner, Home-style Cooking",
+        "dietaryOptions": ["vegetarian options", "some gluten-free"],
+        "reservations": "first come, first served",
+        "reservationLink": "No reservations - walk-in only",
+        "averageMeal": "$12-18 per person"
+      },
+      "experience": {
+        "atmosphere": "Rustic Log Cabin, Local Institution",
+        "bestFor": ["Authentic Local Experience", "Famous Huevos Rancheros", "Hearty Breakfast", "First-Time Visitors"],
+        "specialties": ["Famous Huevos Rancheros", "Banana Bread French Toast", "Plate-sized Pancakes", "Trout & Eggs", "James Beard Award Winner"]
+      },
+      "practical": {
+        "hours": {
+          "monday": "07:00-14:00",
+          "tuesday": "07:00-14:00",
+          "wednesday": "07:00-14:00",
+          "thursday": "07:00-14:00",
+          "friday": "07:00-14:00",
+          "saturday": "07:00-14:00",
+          "sunday": "07:00-14:00"
+        },
+        "phone": "+1-307-733-8288",
+        "website": "https://www.norasfishcreekinn.com"
+      },
+      "content": {
+        "description": "A Jackson Hole institution since 1982, Nora's Fish Creek Inn is where locals flock for authentic Wyoming breakfast. This rustic log cabin in Wilson received the prestigious James Beard Award in 2012 and was featured on Guy Fieri's Diners, Drive-Ins and Dives. Famous for huevos rancheros that have earned legendary status among locals and visitors alike.",
+        "highlights": [
+          "James Beard Award winner (2012) - recognized as an American Classic",
+          "Featured on Guy Fieri's Diners, Drive-Ins and Dives",
+          "Voted 'Best Breakfast in Jackson Hole' multiple years running",
+          "Legendary huevos rancheros with tangy green sauce and broiled jack cheese",
+          "Historic log cabin setting - originally the local post office and general store"
+        ],
+        "tips": [
+          "Must-try the famous huevos rancheros - they're legendary for a reason",
+          "Banana bread French toast is what Guy Fieri called a 'breakfast avalanche'",
+          "Located in Wilson - 15 minutes from Jackson, worth the drive to avoid tourist crowds",
+          "Expect a wait during peak times - locals line up for good reason",
+          "Service is relaxed pace - approach with patience, especially on weekends"
+        ]
+      },
+      "images": [
+        {
+          "url": "/images/placeholder-restaurant.svg",
+          "alt": "Nora's Fish Creek Inn rustic log cabin exterior in Wilson",
+          "caption": "James Beard Award-winning local institution since 1982"
+        }
+      ],
+      "rating": {
+        "overall": 4.1,
+        "food": 4.3,
+        "service": 3.8,
+        "value": 4.2,
+        "atmosphere": 4.4
+      }
+    },
+  
+    {
+      "id": "persephone-bakery",
+      "name": "Persephone Bakery",
+      "slug": "persephone-bakery",
+      "categories": ["french-bakery", "artisan-coffee", "instagram-worthy"],
+      "priceLevel": 3,
+      "location": {
+        "address": "145 E Broadway, Jackson, WY 83001",
+        "coordinates": [43.4799, -110.7624],
+        "distanceFromPark": "6 miles to Grand Teton National Park entrance"
+      },
+      "dining": {
+        "cuisine": "French Bakery, Artisan Breakfast",
+        "dietaryOptions": ["vegetarian", "vegan options", "gluten-free pastries daily"],
+        "reservations": "no reservations - first come, first served",
+        "reservationLink": "Walk-in only",
+        "averageMeal": "$15-25 per person"
+      },
+      "experience": {
+        "atmosphere": "French Café, Instagram-worthy, Rustic Elegant",
+        "bestFor": ["Artisan Pastries", "Premium Coffee", "French Experience", "Beautiful Setting"],
+        "specialties": ["Old World Fermentation Breads", "French Croissants", "Intelligentsia Coffee", "Seasonal Breakfast Menu", "Stone Hearth Baking"]
+      },
+      "practical": {
+        "hours": {
+          "monday": "07:00-18:00",
+          "tuesday": "07:00-18:00",
+          "wednesday": "07:00-18:00",
+          "thursday": "07:00-18:00",
+          "friday": "07:00-18:00",
+          "saturday": "07:00-18:00",
+          "sunday": "07:00-17:00"
+        },
+        "phone": "+1-307-200-6708",
+        "website": "https://persephonebakery.com"
+      },
+      "content": {
+        "description": "This French-inspired bakery and café looks like it jumped straight off a Pinterest board with its whitewashed space and artisan breads. Founded by husband-and-wife team Kevin and Ali Cohane, Persephone uses old world fermentation techniques and stone hearth baking to create authentic French pastries and breads using the highest quality ingredients.",
+        "highlights": [
+          "Featured as 'Most Beautiful Coffee Shop in Wyoming' by national media",
+          "Old world fermentation techniques with stone hearth baking",
+          "Premium Intelligentsia Coffee and artisan espresso drinks",
+          "Multiple locations: Downtown Jackson and Wilson (Westbank)",
+          "Seasonal breakfast menu with locally-sourced ingredients"
+        ],
+        "tips": [
+          "Arrive early - extremely popular and lines can be long",
+          "Try the quiche - consistently rated as some of the best ever tasted",
+          "Outdoor seating available in summer months",
+          "Wilson location (Westbank) is larger and less crowded",
+          "Instagram-worthy setting - perfect for photos"
+        ]
+      },
+      "images": [
+        {
+          "url": "/images/placeholder-restaurant.svg",
+          "alt": "Persephone Bakery French-style café interior with pastry display",
+          "caption": "Artisan French bakery with old world techniques"
+        }
+      ],
+      "rating": {
+        "overall": 4.3,
+        "food": 4.5,
+        "service": 4.0,
+        "value": 3.8,
+        "atmosphere": 4.6
+      }
+    },
+  
+    {
+      "id": "the-bunnery-bakery-restaurant",
+      "name": "The Bunnery Bakery & Restaurant",
+      "slug": "the-bunnery-bakery-restaurant",
+      "categories": ["local-institution", "bakery-restaurant", "family-favorite"],
+      "priceLevel": 2,
+      "location": {
+        "address": "130 N Cache Street, Jackson, WY 83001",
+        "coordinates": [43.4799, -110.7624],
+        "distanceFromPark": "6 miles to Grand Teton National Park entrance"
+      },
+      "dining": {
+        "cuisine": "American Breakfast, Bakery Specialties",
+        "dietaryOptions": ["vegetarian", "some vegan options"],
+        "reservations": "first come, first served",
+        "reservationLink": "No reservations - walk-in only",
+        "averageMeal": "$12-20 per person"
+      },
+      "experience": {
+        "atmosphere": "Casual Local Gathering Place, Historic Charm",
+        "bestFor": ["OSM Pancakes", "Fresh Baked Goods", "Local Experience", "Families"],
+        "specialties": ["Famous OSM Pancakes", "Fresh-baked Breads", "Homemade Granola", "Breakfast All Day", "Half-pound Wyoming Beef Burgers"]
+      },
+      "practical": {
+        "hours": {
+          "monday": "07:00-14:00",
+          "tuesday": "07:00-14:00",
+          "wednesday": "07:00-14:00",
+          "thursday": "07:00-14:00",
+          "friday": "07:00-14:00",
+          "saturday": "07:00-15:00",
+          "sunday": "07:00-15:00"
+        },
+        "phone": "+1-307-733-5474",
+        "website": "https://bunnery.com"
+      },
+      "content": {
+        "description": "A Jackson Hole institution since 1975, The Bunnery started as a bakery in a small log cabin that was once a blacksmith shop. This local favorite is famous for its OSM (Oats, Sunflower, and Millet) recipe used in pancakes, waffles, and breads - a unique blend you'll find nowhere else. Named 'Best Diner in Wyoming' by MSNBC.",
+        "highlights": [
+          "Operating since 1975 - 50 years of Jackson Hole breakfast tradition",
+          "Famous OSM (Oats, Sunflower, Millet) pancakes and breads - signature recipe",
+          "Named 'Best Diner in Wyoming' by MSNBC",
+          "Fresh-squeezed orange juice and Starbucks bottomless coffee",
+          "Take-home options: OSM granola, pancake mixes, and baked goods"
+        ],
+        "tips": [
+          "Must-try the OSM pancakes - they're what The Bunnery is famous for",
+          "Half-block north of Town Square - easy to find",
+          "Great bakery counter for take-home treats and mixes",
+          "Summer outdoor seating on covered terrace",
+          "Popular with locals - arrive early to avoid waits"
+        ]
+      },
+      "images": [
+        {
+          "url": "/images/placeholder-restaurant.svg",
+          "alt": "The Bunnery Bakery Restaurant historic interior with bakery counter",
+          "caption": "50 years of OSM pancakes and fresh-baked traditions"
+        }
+      ],
+      "rating": {
+        "overall": 4.1,
+        "food": 4.2,
+        "service": 4.0,
+        "value": 4.3,
+        "atmosphere": 4.0
+      }
+    },
+  
+    {
+      "id": "cafe-genevieve-breakfast",
+      "name": "Cafe Genevieve",
+      "slug": "cafe-genevieve-breakfast",
+      "categories": ["historic-cabin", "southern-brunch", "comfort-food"],
+      "priceLevel": 2,
+      "location": {
+        "address": "135 N Cache Street, Jackson, WY 83001",
+        "coordinates": [43.4799, -110.7624],
+        "distanceFromPark": "6 miles to Grand Teton National Park entrance"
+      },
+      "dining": {
+        "cuisine": "Southern-Inspired American, Comfort Food",
+        "dietaryOptions": ["vegetarian", "some gluten-free options"],
+        "reservations": "recommended for brunch",
+        "reservationLink": "https://genevievejh.com",
+        "averageMeal": "$12-22 per person"
+      },
+      "experience": {
+        "atmosphere": "Historic Log Cabin, Cozy Southern Comfort",
+        "bestFor": ["Pig Candy Bacon", "Fried Chicken & Waffles", "Outdoor Brunch", "Historic Setting"],
+        "specialties": ["Famous Pig Candy Bacon", "Fried Chicken & Waffles", "Cajun Eggs Benedict", "Biscuits & Cajun Gravy", "All-Day Brunch"]
+      },
+      "practical": {
+        "hours": {
+          "monday": "08:00-15:00",
+          "tuesday": "08:00-15:00",
+          "wednesday": "08:00-15:00",
+          "thursday": "08:00-15:00",
+          "friday": "08:00-15:00",
+          "saturday": "08:00-15:00",
+          "sunday": "08:00-15:00"
+        },
+        "phone": "+1-307-732-1910",
+        "website": "https://genevievejh.com"
+      },
+      "content": {
+        "description": "Housed in a historic 1906 log cabin just one block from Town Square, Cafe Genevieve serves 'inspired home cooked classics' with a Southern twist. This cozy brunch destination is famous for its Pig Candy bacon and Southern comfort food in a setting under 110-year-old cottonwood trees.",
+        "highlights": [
+          "Historic 1906 log cabin - one of Jackson's few remaining original structures",
+          "Famous 'Pig Candy' bacon - thick applewood smoked with sugar and spices",
+          "Featured on Guy Fieri's Diners, Drive-Ins and Dives",
+          "All-day brunch served until 3pm - perfect for late risers",
+          "Beautiful outdoor patio under century-old cottonwood trees"
+        ],
+        "tips": [
+          "Must-order the Pig Candy bacon - it's legendary and addictive",
+          "Brunch served all day until 3pm - great for sleeping in",
+          "Historic log cabin atmosphere adds charm to the meal",
+          "Outdoor patio is beautiful in summer under the old trees",
+          "Southern comfort food with Wyoming touches - unique combination"
+        ]
+      },
+      "images": [
+        {
+          "url": "/images/placeholder-restaurant.svg",
+          "alt": "Cafe Genevieve historic log cabin with outdoor patio dining",
+          "caption": "Southern comfort brunch in a historic 1906 log cabin"
+        }
+      ],
+      "rating": {
+        "overall": 4.2,
+        "food": 4.3,
+        "service": 4.1,
+        "value": 4.0,
+        "atmosphere": 4.4
+      }
+    },
+  
+    {
+      "id": "snake-river-roasting-company",
+      "name": "Snake River Roasting Company",
+      "slug": "snake-river-roasting-company",
+      "categories": ["coffee-roaster", "local-coffee", "quick-breakfast"],
+      "priceLevel": 2,
+      "location": {
+        "address": "1050 W Broadway, Jackson, WY 83001",
+        "coordinates": [43.4799, -110.7624],
+        "distanceFromPark": "6 miles to Grand Teton National Park entrance"
+      },
+      "dining": {
+        "cuisine": "Coffee Shop, Light Breakfast",
+        "dietaryOptions": ["vegetarian", "vegan options", "healthy choices"],
+        "reservations": "not needed - quick service",
+        "reservationLink": "No reservations needed",
+        "averageMeal": "$8-15 per person"
+      },
+      "experience": {
+        "atmosphere": "Modern Coffee Shop, Female-led Business",
+        "bestFor": ["Award-winning Coffee", "Quick Breakfast", "Local Roasting", "Grab & Go"],
+        "specialties": ["Award-winning Local Coffee Roasts", "Female-led Coffee Team", "Modern Vibrant Atmosphere", "Upstairs Loft Seating", "Provisions-prepared Food"]
+      },
+      "practical": {
+        "hours": {
+          "monday": "06:30-15:00",
+          "tuesday": "06:30-15:00",
+          "wednesday": "06:30-15:00",
+          "thursday": "06:30-15:00",
+          "friday": "06:30-15:00",
+          "saturday": "06:30-15:00",
+          "sunday": "06:30-15:00"
+        },
+        "phone": "+1-307-690-2420",
+        "website": "https://snakeriverroasting.com"
+      },
+      "content": {
+        "description": "A popular local coffee roaster near Town Square, Snake River Roasting Company offers award-winning coffees that capture the essence of Wyoming. This female-led team is dedicated to crafting high-quality coffee roasts in a modern, vibrant atmosphere with stylish decor and an upstairs loft area for relaxed seating.",
+        "highlights": [
+          "Award-winning local coffee roaster capturing Wyoming's essence",
+          "Female-led team dedicated to high-quality coffee crafting",
+          "Modern vibrant atmosphere with upstairs loft seating area",
+          "Food menu prepared by Provisions - beyond typical coffee shop fare",
+          "Near Town Square location with convenient parking"
+        ],
+        "tips": [
+          "Perfect for quick breakfast before outdoor adventures",
+          "Upstairs loft area provides quieter seating option",
+          "Local roasting means fresher coffee than chain alternatives",
+          "Great grab-and-go option for park visits",
+          "Support local, female-led business with award-winning products"
+        ]
+      },
+      "images": [
+        {
+          "url": "/images/placeholder-restaurant.svg",
+          "alt": "Snake River Roasting Company modern coffee shop interior",
+          "caption": "Award-winning local coffee roastery near Town Square"
+        }
+      ],
+      "rating": {
+        "overall": 4.2,
+        "food": 4.0,
+        "service": 4.3,
+        "value": 4.4,
+        "atmosphere": 4.1
+      }
+    },
+    {
+      "id": "pinky-gs-pizzeria",
+      "name": "Pinky G's Pizzeria",
+      "slug": "pinky-gs-pizzeria",
+      "categories": ["pizza-joint", "quick-bite", "late-night"],
+      "priceLevel": 2,
+      "location": {
+        "address": "50 W Broadway Avenue, Jackson, WY 83001",
+        "coordinates": [43.4799, -110.7624],
+        "distanceFromPark": "6 miles to Grand Teton National Park entrance"
+      },
+      "dining": {
+        "cuisine": "New York Style Pizza",
+        "dietaryOptions": ["vegetarian", "build-your-own options"],
+        "reservations": "first come, first served",
+        "reservationLink": "No reservations - walk-in only",
+        "averageMeal": "$8-15 per person"
+      },
+      "experience": {
+        "atmosphere": "Casual Pizza Joint, Local Hangout",
+        "bestFor": ["Quick Pizza Fix", "Late Night Eats", "Groups", "Live Music"],
+        "specialties": ["Hand-tossed NY Style Pizza", "$8 Lunch Special", "Abe Froman Pizza", "Guy's Pie", "Live Music Stage"]
+      },
+      "practical": {
+        "hours": {
+          "monday": "11:00-02:00",
+          "tuesday": "11:00-02:00",
+          "wednesday": "11:00-02:00",
+          "thursday": "11:00-02:00",
+          "friday": "11:00-02:00",
+          "saturday": "11:00-02:00",
+          "sunday": "11:00-02:00"
+        },
+        "phone": "+1-307-733-1500",
+        "website": "https://pinkygs.com"
+      },
+      "content": {
+        "description": "Voted best pizza in Jackson Hole since 2011, Pinky G's brings authentic New York-style hand-tossed pizza to Wyoming. Featured three times on Guy Fieri's Diners, Drive-Ins and Dives, this casual pizzeria under the Pink Garter Theater serves huge slices until 2am, making it the perfect late-night spot after exploring Town Square.",
+        "highlights": [
+          "Voted Best Pizza in Jackson Hole since 2011 by locals",
+          "Featured 3 times on Guy Fieri's Diners, Drive-Ins and Dives",
+          "Famous $8 lunch special - giant slice, salad, and soda",
+          "Open until 2am - latest dining option in Jackson",
+          "Live music stage with local artists performing regularly"
+        ],
+        "tips": [
+          "Try the Abe Froman (Sausage King of Chicago) - spicy Italian sausage specialty",
+          "Best deal: $8 lunch special includes huge slice, salad, and soda",
+          "Located under Pink Garter Theater - follow the amazing pizza aroma",
+          "Open latest in town (2am) - perfect for après-ski or late night cravings",
+          "Cornhole boards outside add to the casual, fun atmosphere"
+        ]
+      },
+      "images": [
+        {
+          "url": "/images/placeholder-restaurant.svg",
+          "alt": "Pinky G's Pizzeria casual dining room with live music stage",
+          "caption": "New York-style pizza and late-night vibes since 2011"
+        }
+      ],
+      "rating": {
+        "overall": 4.2,
+        "food": 4.3,
+        "service": 4.0,
+        "value": 4.5,
+        "atmosphere": 4.1
+      }
+    },
+  
+    {
+      "id": "liberty-burger-jackson-hole",
+      "name": "Liberty Burger",
+      "slug": "liberty-burger-jackson-hole",
+      "categories": ["gourmet-burgers", "quick-casual", "local-sourcing"],
+      "priceLevel": 2,
+      "location": {
+        "address": "160 N Cache Street, Jackson, WY 83001",
+        "coordinates": [43.4799, -110.7624],
+        "distanceFromPark": "6 miles to Grand Teton National Park entrance"
+      },
+      "dining": {
+        "cuisine": "Gourmet Burgers, American",
+        "dietaryOptions": ["vegetarian", "turkey burgers", "gluten-free buns"],
+        "reservations": "not needed - quick casual",
+        "reservationLink": "Walk-in only",
+        "averageMeal": "$12-18 per person"
+      },
+      "experience": {
+        "atmosphere": "Family-owned Texas-style, Quick Casual",
+        "bestFor": ["Gourmet Burgers", "Quick Lunch", "Family Dining", "Quality Beef"],
+        "specialties": ["Never-frozen Chuck/Brisket/Tenderloin", "Bison Burgers", "The Nooner", "Lamb Burger", "Monthly Specialty Burgers"]
+      },
+      "practical": {
+        "hours": {
+          "monday": "11:30-21:30",
+          "tuesday": "11:30-21:30",
+          "wednesday": "11:30-21:30",
+          "thursday": "11:30-21:30",
+          "friday": "11:30-21:30",
+          "saturday": "11:30-21:30",
+          "sunday": "11:30-21:30"
+        },
+        "phone": "+1-307-733-7766",
+        "website": "https://www.givemelibertyburger.com"
+      },
+      "content": {
+        "description": "Family-owned and Texas-grown, Liberty Burger reinvents the all-American hamburger with never-frozen chuck, brisket, and tenderloin. Their motto 'Give me liberty or let me starve' reflects their commitment to quality sourcing, local bakeries, and responsible meat sources - proving that doing things right is worth it.",
+        "highlights": [
+          "Never-frozen premium beef: chuck, brisket, and tenderloin blend",
+          "Family-owned Texas operation with Wyoming values",
+          "Monthly specialty burger featuring seasonal ingredients",
+          "Local bakeries using only American-grown ingredients",
+          "Environmental responsibility and social contribution focus"
+        ],
+        "tips": [
+          "Try the bison burger - locals highly recommend it over beef",
+          "The Nooner with ham and hash browns is a unique breakfast-burger hybrid",
+          "Monthly specialty burgers offer creative seasonal combinations",
+          "Quality ingredients make this worth the slightly higher price",
+          "Quick service perfect for refueling between outdoor activities"
+        ]
+      },
+      "images": [
+        {
+          "url": "/images/placeholder-restaurant.svg",
+          "alt": "Liberty Burger casual dining interior with Western touches",
+          "caption": "Texas-grown quality meets Wyoming values"
+        }
+      ],
+      "rating": {
+        "overall": 4.3,
+        "food": 4.4,
+        "service": 4.2,
+        "value": 4.1,
+        "atmosphere": 4.0
+      }
+    },
+  
+    {
+      "id": "pearl-street-bagels",
+      "name": "Pearl Street Bagels",
+      "slug": "pearl-street-bagels",
+      "categories": ["bagel-shop", "quick-breakfast", "east-coast-authentic"],
+      "priceLevel": 2,
+      "location": {
+        "address": "145 W Pearl Avenue, Jackson, WY 83001",
+        "coordinates": [43.4799, -110.7624],
+        "distanceFromPark": "6 miles to Grand Teton National Park entrance"
+      },
+      "dining": {
+        "cuisine": "Authentic East Coast Bagels, Deli",
+        "dietaryOptions": ["vegetarian", "vegan cream cheese options"],
+        "reservations": "not needed - quick service",
+        "reservationLink": "Walk-in only",
+        "averageMeal": "$8-15 per person"
+      },
+      "experience": {
+        "atmosphere": "Authentic Bagel Shop, East Coast Tradition",
+        "bestFor": ["Authentic Bagels", "Quick Breakfast", "Grab & Go", "Coffee"],
+        "specialties": ["14 Varieties Boiled & Baked Bagels", "Homemade Cream Cheeses", "Everything Bagel", "Lox & Bagel", "Fresh Coffee"]
+      },
+      "practical": {
+        "hours": {
+          "monday": "07:00-15:00",
+          "tuesday": "07:00-15:00",
+          "wednesday": "07:00-15:00",
+          "thursday": "07:00-15:00",
+          "friday": "07:00-15:00",
+          "saturday": "07:00-15:00",
+          "sunday": "07:00-15:00"
+        },
+        "phone": "+1-307-739-1218",
+        "website": "https://www.pearlstreetbagels.com"
+      },
+      "content": {
+        "description": "Celebrating 35 years of serving authentic bagels boiled and baked in the East Coast tradition since 1990. Pearl Street Bagels makes their dough on-site and serves bagels fresh throughout the day, never toasted - operating on the philosophy that fresh bagels are better than toasted ones.",
+        "highlights": [
+          "35 years of authentic East Coast bagel tradition since 1990",
+          "14 varieties of bagels boiled and baked fresh daily",
+          "Homemade cream cheeses including unique flavors",
+          "Two locations: downtown Jackson and Wilson",
+          "Voted locals' favorite coffee shop multiple years"
+        ],
+        "tips": [
+          "Ask which bagels are hot out of the oven when you arrive",
+          "Everything bagel with veggie cream cheese is a local favorite",
+          "Perfect grab-and-go option for hiking in Grand Teton",
+          "Try the sun-dried tomato olive cream cheese for something special",
+          "Wilson location is larger and less crowded than downtown"
+        ]
+      },
+      "images": [
+        {
+          "url": "/images/placeholder-restaurant.svg",
+          "alt": "Pearl Street Bagels shop interior with bagel display",
+          "caption": "35 years of authentic East Coast bagel tradition"
+        }
+      ],
+      "rating": {
+        "overall": 4.0,
+        "food": 4.2,
+        "service": 3.8,
+        "value": 4.3,
+        "atmosphere": 3.9
+      }
+    },
+  
+    {
+      "id": "cowboy-coffee-company",
+      "name": "Cowboy Coffee Co.",
+      "slug": "cowboy-coffee-company",
+      "categories": ["coffee-shop", "quick-breakfast", "local-roaster"],
+      "priceLevel": 2,
+      "location": {
+        "address": "125 N Cache Street, Jackson, WY 83001",
+        "coordinates": [43.4799, -110.7624],
+        "distanceFromPark": "6 miles to Grand Teton National Park entrance"
+      },
+      "dining": {
+        "cuisine": "Coffee Shop, Breakfast Sandwiches",
+        "dietaryOptions": ["vegetarian", "some vegan options"],
+        "reservations": "not needed - coffee shop",
+        "reservationLink": "Walk-in only",
+        "averageMeal": "$6-12 per person"
+      },
+      "experience": {
+        "atmosphere": "Western-themed, Local Art Gallery",
+        "bestFor": ["Local Coffee", "Quick Breakfast", "Local Art", "Early Morning"],
+        "specialties": ["Fresh-roasted Local Coffee", "Buffalo Chili", "Breakfast Sandwiches", "Granger Sandwich", "Local Art Displays"]
+      },
+      "practical": {
+        "hours": {
+          "monday": "06:00-18:00",
+          "tuesday": "06:00-18:00",
+          "wednesday": "06:00-18:00",
+          "thursday": "06:00-18:00",
+          "friday": "06:00-18:00",
+          "saturday": "06:00-18:00",
+          "sunday": "06:00-18:00"
+        },
+        "phone": "+1-307-733-7392",
+        "website": "https://cowboycoffee.com"
+      },
+      "content": {
+        "description": "Voted Best Coffee Shop in Wyoming by Business Insider, Cowboy Coffee has been serving Jackson Hole with strong, bold, fresh-roasted coffee for over 20 years. This Western-themed coffee shop on Town Square features local art, comfortable couches, and the famous signature Buffalo Chili.",
+        "highlights": [
+          "Voted Best Coffee Shop in Wyoming by Business Insider",
+          "20+ years serving fresh-roasted coffee in Jackson Hole",
+          "Located right on Town Square - prime location",
+          "Rotating local art gallery on the walls",
+          "Famous signature Buffalo Chili unique to Wyoming"
+        ],
+        "tips": [
+          "Try the Granger breakfast sandwich - it's a local's favorite",
+          "Opens at 6am - perfect for early morning adventures",
+          "Comfortable couches make it great for reading or working",
+          "Buy a bag of coffee beans to take home from your travels",
+          "Owners Pete and Rob are often there brewing your coffee"
+        ]
+      },
+      "images": [
+        {
+          "url": "/images/placeholder-restaurant.svg",
+          "alt": "Cowboy Coffee Co. rustic interior with local art and comfortable seating",
+          "caption": "Wyoming's best coffee shop for over 20 years"
+        }
+      ],
+      "rating": {
+        "overall": 4.3,
+        "food": 4.1,
+        "service": 4.4,
+        "value": 4.4,
+        "atmosphere": 4.2
+      }
+    },
+  
+    {
+      "id": "teton-tiger",
+      "name": "Teton Tiger",
+      "slug": "teton-tiger",
+      "categories": ["pan-asian-fusion", "cocktail-bar", "modern-casual"],
+      "priceLevel": 3,
+      "location": {
+        "address": "165 Center Street, Jackson, WY 83001",
+        "coordinates": [43.4799, -110.7624],
+        "distanceFromPark": "6 miles to Grand Teton National Park entrance"
+      },
+      "dining": {
+        "cuisine": "Pan-Asian Fusion",
+        "dietaryOptions": ["vegetarian", "vegan options", "gluten-free available"],
+        "reservations": "recommended for dinner",
+        "reservationLink": "https://www.tetontiger.com",
+        "averageMeal": "$18-28 per person"
+      },
+      "experience": {
+        "atmosphere": "Modern Asian Fusion, Stylish Bar",
+        "bestFor": ["Asian Fusion", "Craft Cocktails", "Date Night", "Groups"],
+        "specialties": ["Thai, Chinese, Korean, Japanese, Indian Dishes", "Craft Cocktails", "Tikka Curry", "Korean BBQ Tacos", "Modern Street Food"]
+      },
+      "practical": {
+        "hours": {
+          "monday": "17:00-21:00",
+          "tuesday": "17:00-21:00",
+          "wednesday": "17:00-21:00",
+          "thursday": "17:00-21:00",
+          "friday": "17:00-21:00",
+          "saturday": "17:00-21:00",
+          "sunday": "closed"
+        },
+        "phone": "+1-307-734-0038",
+        "website": "https://www.tetontiger.com"
+      },
+      "content": {
+        "description": "From the minds behind Teton Thai, Teton Tiger offers fresh, bright, bold Pan-Asian cuisine in the mountains of Wyoming. This modern restaurant features dishes ranging from Thai to Chinese to Korean to Indian, all incorporating local ingredients with stylish bar seating and an energetic atmosphere.",
+        "highlights": [
+          "From the creators of acclaimed Teton Thai restaurant",
+          "Pan-Asian menu spanning Thai, Chinese, Korean, Japanese, and Indian",
+          "Stylish modern interior with large booths for groups",
+          "Expertly crafted cocktail program with inventive drinks",
+          "Live music and energetic atmosphere on select nights"
+        ],
+        "tips": [
+          "Try the tikka curry and pad Thai - frequently mentioned favorites",
+          "Cocktails are exceptional - some say best margaritas in Jackson",
+          "Stylish interior makes this perfect for date nights",
+          "Large booths accommodate groups well",
+          "Check Instagram @tetontiger for daily specials and deals"
+        ]
+      },
+      "images": [
+        {
+          "url": "/images/placeholder-restaurant.svg",
+          "alt": "Teton Tiger modern Asian fusion restaurant interior with stylish bar",
+          "caption": "Pan-Asian fusion with mountain flair"
+        }
+      ],
+      "rating": {
+        "overall": 4.1,
+        "food": 4.3,
+        "service": 3.9,
+        "value": 3.8,
+        "atmosphere": 4.4
+      }
+    },
+    {
+      "id": "bin22-jackson-hole",
+      "name": "Bin22",
+      "slug": "bin22-jackson-hole",
+      "categories": ["wine-bar", "upscale-dining", "european-style"],
+      "priceLevel": 3,
+      "location": {
+        "address": "200 W Broadway, Jackson, WY 83001",
+        "coordinates": [43.4799, -110.7631],
+        "distanceFromPark": "3 miles"
+      },
+      "dining": {
+        "cuisine": "European Tapas & Wine Bar",
+        "dietaryOptions": ["vegetarian", "gluten-free-options"],
+        "reservations": "walk-in only",
+        "reservationLink": null,
+        "averageMeal": "$30-45"
+      },
+      "experience": {
+        "atmosphere": "Sophisticated Wine Bar, European-Inspired",
+        "bestFor": ["Wine Lovers", "Date Night", "Small Plates", "European Experience"],
+        "specialties": ["House-pulled Mozzarella", "Spanish Salad", "Italian Tapas", "Extensive Wine Selection"]
+      },
+      "practical": {
+        "hours": {
+          "monday": "10:00-22:00",
+          "tuesday": "10:00-22:00",
+          "wednesday": "10:00-22:00",
+          "thursday": "10:00-22:00",
+          "friday": "10:00-22:00",
+          "saturday": "10:00-22:00",
+          "sunday": "10:00-22:00"
+        },
+        "phone": "+1-307-739-9463",
+        "website": "https://bin22jacksonhole.com"
+      },
+      "content": {
+        "description": "Inspired by Tuscan wine experiences, Bin22 combines the sophisticated energy of New York City with Italian countryside elegance. This intimate wine bar and tapas restaurant features an extensive bottle shop where guests can select wines to enjoy at their table with no corkage fee.",
+        "highlights": ["#1 rated restaurant on TripAdvisor", "Over 300 wines available", "House-made fresh mozzarella", "European-style communal tables", "Adjacent wine shop with expert sommeliers"],
+        "tips": ["No reservations - arrive early for best seating", "Try the house-pulled mozzarella with toppings", "Portions are large - order 1 tapa per person initially", "Browse the wine shop and take bottles to your table", "Outdoor deck available for pleasant weather"]
+      },
+      "images": [
+        {
+          "url": "/images/placeholder-restaurant.svg",
+          "alt": "Bin22 wine bar interior with warm wood surroundings",
+          "caption": "Sophisticated wine bar experience in downtown Jackson"
+        }
+      ],
+      "rating": {
+        "overall": 4.7,
+        "food": 4.8,
+        "service": 4.6,
+        "value": 4.5,
+        "atmosphere": 4.8
+      }
+    },
+    {
+      "id": "handle-bar-four-seasons",
+      "name": "The Handle Bar",
+      "slug": "handle-bar-four-seasons",
+      "categories": ["apres-ski", "mountain-bar", "pub-elevated"],
+      "priceLevel": 4,
+      "location": {
+        "address": "7680 Granite Loop Road, Teton Village, WY 83025",
+        "coordinates": [43.5885, -110.8275],
+        "distanceFromPark": "At Teton Village base"
+      },
+      "dining": {
+        "cuisine": "Elevated American Pub by Chef Michael Mina",
+        "dietaryOptions": ["vegetarian", "gluten-free"],
+        "reservations": "recommended",
+        "reservationLink": "https://www.fourseasons.com/jacksonhole/dining/restaurants/the_handle_bar/",
+        "averageMeal": "$40-70"
+      },
+      "experience": {
+        "atmosphere": "Upscale Ski Lodge, Mountain Views",
+        "bestFor": ["Après-Ski", "Mountain Views", "Elevated Bar Food", "Groups"],
+        "specialties": ["Jackson Hole Elk Chili", "Best Burger on the Mountain", "Wyo Smash Cocktail", "Pretzel with Beer Cheese"]
+      },
+      "practical": {
+        "hours": {
+          "monday": "11:00-20:30",
+          "tuesday": "11:00-20:30",
+          "wednesday": "11:00-20:30",
+          "thursday": "11:00-20:30",
+          "friday": "11:00-20:30",
+          "saturday": "11:00-20:30",
+          "sunday": "11:00-20:30"
+        },
+        "phone": "+1-307-732-5620",
+        "website": "https://www.fourseasons.com/jacksonhole/dining/restaurants/the_handle_bar/"
+      },
+      "content": {
+        "description": "Located at the Four Seasons in Teton Village, The Handle Bar offers elevated pub fare by Chef Michael Mina with stunning views of Rendezvous Mountain. This contemporary American pub features a 30-seat center bar, cozy booths, and an expansive heated terrace.",
+        "highlights": ["Chef Michael Mina concept", "Jaw-dropping mountain views", "Happy hour 3-5pm", "30-seat center bar", "Heated outdoor terrace with fire features"],
+        "tips": ["Book reservations for prime dining times", "Try the signature Wyo Smash cocktail", "Elk chili is a must-try local favorite", "Arrive early for patio seats with mountain views", "Beer served in 33oz boots for groups"]
+      },
+      "images": [
+        {
+          "url": "/images/placeholder-restaurant.svg",
+          "alt": "Handle Bar interior with mountain views and rustic elegance",
+          "caption": "Elevated après-ski dining with Teton Range views"
+        }
+      ],
+      "rating": {
+        "overall": 4.0,
+        "food": 4.1,
+        "service": 4.0,
+        "value": 3.5,
+        "atmosphere": 4.5
+      }
+    },
+    {
+      "id": "gather-jackson-hole",
+      "name": "Gather",
+      "slug": "gather-jackson-hole",
+      "categories": ["creative-american", "cocktail-bar", "trendy-dining"],
+      "priceLevel": 3,
+      "location": {
+        "address": "72 S Glenwood Street, Jackson, WY 83001",
+        "coordinates": [43.4792, -110.7618],
+        "distanceFromPark": "3.5 miles"
+      },
+      "dining": {
+        "cuisine": "Creative Modern American with Asian & Mediterranean Influences",
+        "dietaryOptions": ["vegetarian", "vegan", "gluten-free"],
+        "reservations": "recommended",
+        "reservationLink": "https://gatherjh.com",
+        "averageMeal": "$30-50"
+      },
+      "experience": {
+        "atmosphere": "Trendy, Creative, Mountain Views of Snow King",
+        "bestFor": ["Creative Cuisine", "Cocktails", "Date Night", "Groups"],
+        "specialties": ["Elk Bolognese", "Truffle Pasta", "Wagyu Tartare", "Korean Marinated Ribeye", "Steamed Pork Buns"]
+      },
+      "practical": {
+        "hours": {
+          "monday": "17:00-21:00",
+          "tuesday": "17:00-21:00",
+          "wednesday": "17:00-21:00",
+          "thursday": "17:00-21:00",
+          "friday": "17:00-21:00",
+          "saturday": "17:00-21:00",
+          "sunday": "17:00-21:00"
+        },
+        "phone": "+1-307-264-1820",
+        "website": "https://gatherjh.com"
+      },
+      "content": {
+        "description": "Gather offers creative modern American cuisine with bold Asian and Mediterranean influences. This women-owned establishment features a trendy cocktail bar atmosphere with Snow King Mountain views and is consistently rated as one of Jackson's top restaurants.",
+        "highlights": ["Women-owned establishment", "Creative fusion menu", "Mountain views of Snow King", "Extensive craft cocktail menu", "Customer-influenced menu development"],
+        "tips": ["Book reservations well in advance", "Elk bolognese is the signature dish locals rave about", "Happy hour available at 5pm at the bar", "Try the Tuesday Tastings at 2pm with chef and owner", "Outdoor seating available with mountain views"]
+      },
+      "images": [
+        {
+          "url": "/images/placeholder-restaurant.svg",
+          "alt": "Gather restaurant interior with modern design and mountain views",
+          "caption": "Creative cuisine with stunning Snow King Mountain backdrop"
+        }
+      ],
+      "rating": {
+        "overall": 4.7,
+        "food": 4.8,
+        "service": 4.6,
+        "value": 4.4,
+        "atmosphere": 4.7
+      }
+    }
+  ]
+}

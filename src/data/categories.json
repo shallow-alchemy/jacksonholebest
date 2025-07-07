@@ -1,50 +1,144 @@
-[
-  {
-    "id": "post-hike-fuel",
-    "name": "Post-Hike Fuel",
-    "icon": "🥾",
-    "description": "Perfect for refueling after outdoor adventures"
-  },
-  {
-    "id": "local-favorite",
-    "name": "Local Favorite",
-    "icon": "⭐",
-    "description": "Beloved by Jackson Hole locals"
-  },
-  {
-    "id": "fine-dining",
-    "name": "Fine Dining",
-    "icon": "🍷",
-    "description": "Upscale dining for special occasions"
-  },
-  {
-    "id": "casual-dining",
-    "name": "Casual Dining",
-    "icon": "🍽️",
-    "description": "Relaxed atmosphere for everyday meals"
-  },
-  {
-    "id": "family-friendly",
-    "name": "Family Friendly",
-    "icon": "👨‍👩‍👧‍👦",
-    "description": "Great for dining with kids"
-  },
-  {
-    "id": "romantic",
-    "name": "Romantic",
-    "icon": "❤️",
-    "description": "Perfect for date nights"
-  },
-  {
-    "id": "group-dining",
-    "name": "Group Dining",
-    "icon": "👥",
-    "description": "Ideal for large groups and celebrations"
-  },
-  {
-    "id": "quick-bite",
-    "name": "Quick Bite",
-    "icon": "⚡",
-    "description": "Fast and convenient options"
+{
+  "categoryGroups": [
+    {
+      "id": "adventure-fuel",
+      "name": "Adventure Fuel",
+      "icon": "🥾",
+      "description": "Perfect for refueling after outdoor activities",
+      "categories": [
+        "post-hike-fuel",
+        "apres-ski",
+        "quick-bite"
+      ]
+    },
+    {
+      "id": "special-occasions",
+      "name": "Special Occasions",
+      "icon": "🎉",
+      "description": "Upscale dining for celebrations and romantic evenings",
+      "categories": [
+        "fine-dining",
+        "celebration-dinners",
+        "romantic",
+        "james-beard-award"
+      ]
+    },
+    {
+      "id": "family-groups",
+      "name": "Family & Groups",
+      "icon": "👨‍👩‍👧‍👦",
+      "description": "Great for families and large group dining",
+      "categories": [
+        "family-friendly",
+        "family-favorite",
+        "group-dining"
+      ]
+    },
+    {
+      "id": "local-favorites",
+      "name": "Local Favorites",
+      "icon": "⭐",
+      "description": "Beloved by Jackson Hole locals and longtime institutions",
+      "categories": [
+        "local-favorite",
+        "local-institution",
+        "local-hangout",
+        "historic"
+      ]
+    },
+    {
+      "id": "breakfast-lunch",
+      "name": "Breakfast & Lunch",
+      "icon": "🌅",
+      "description": "Morning fuel and midday meals for adventurers",
+      "categories": [
+        "quick-breakfast",
+        "breakfast-lunch",
+        "bagel-shop"
+      ]
+    },
+    {
+      "id": "casual-everyday",
+      "name": "Casual Everyday",
+      "icon": "🍽️",
+      "description": "Relaxed dining for regular meals",
+      "categories": [
+        "casual-dining",
+        "pizza-joint",
+        "gourmet-burgers"
+      ]
+    },
+    {
+      "id": "premium-steaks-wine",
+      "name": "Premium Steaks & Wine",
+      "icon": "🥩",
+      "description": "High-end steakhouses and wine-focused dining",
+      "categories": [
+        "steakhouse",
+        "wine-bar",
+        "modern-american"
+      ]
+    },
+    {
+      "id": "drinks-nightlife",
+      "name": "Drinks & Nightlife",
+      "icon": "🍸",
+      "description": "Craft cocktails and evening social spots",
+      "categories": [
+        "cocktail-bar"
+      ]
+    },
+    {
+      "id": "international-cuisine",
+      "name": "International Cuisine",
+      "icon": "🌮",
+      "description": "Diverse global flavors and fusion dining",
+      "categories": [
+        "mexican",
+        "pan-asian-fusion"
+      ]
+    },
+    {
+      "id": "bakeries-coffee",
+      "name": "Bakeries & Coffee",
+      "icon": "☕",
+      "description": "Fresh baked goods, coffee, and light bites",
+      "categories": [
+        "french-bakery",
+        "coffee-shop",
+        "bakery-restaurant"
+      ]
+    }
+  ],
+  "categoryToGroupMapping": {
+    "post-hike-fuel": "adventure-fuel",
+    "local-favorite": "local-favorites",
+    "fine-dining": "special-occasions",
+    "casual-dining": "casual-everyday",
+    "family-friendly": "family-groups",
+    "romantic": "special-occasions",
+    "group-dining": "family-groups",
+    "quick-bite": "adventure-fuel",
+    "celebration-dinners": "special-occasions",
+    "steakhouse": "premium-steaks-wine",
+    "wine-bar": "premium-steaks-wine",
+    "modern-american": "premium-steaks-wine",
+    "historic": "local-favorites",
+    "family-favorite": "family-groups",
+    "quick-breakfast": "breakfast-lunch",
+    "local-institution": "local-favorites",
+    "cocktail-bar": "drinks-nightlife",
+    "breakfast-lunch": "breakfast-lunch",
+    "mexican": "international-cuisine",
+    "french-bakery": "bakeries-coffee",
+    "coffee-shop": "bakeries-coffee",
+    "pizza-joint": "casual-everyday",
+    "gourmet-burgers": "casual-everyday",
+    "bagel-shop": "breakfast-lunch",
+    "pan-asian-fusion": "international-cuisine",
+    "local-hangout": "local-favorites",
+    "bakery-restaurant": "bakeries-coffee",
+    "apres-ski": "adventure-fuel",
+    "james-beard-award": "special-occasions"
   }
-]
+}

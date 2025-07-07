@@ -1,0 +1,229 @@
+/* Restaurants Page Styles */
+.container {
+  background-color: var(--color-neutral-50);
+}
+
+/* Hero Section */
+.heroSection {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.heroBackground {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: var(--restaurants-hero-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Adjust background position for specific themes */
+:global(.theme-autumn-harvest) .heroBackground {
+  background-position: center 20%;
+}
+
+:global(.theme-winter-wonderland) .heroBackground {
+  background-position: center 20%;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  color: white;
+  max-width: 64rem;
+  padding: 0 var(--spacing-lg);
+}
+
+.heroTitle {
+  font-size: var(--font-size-4xl);
+  font-weight: bold;
+  margin-bottom: var(--spacing-lg);
+  line-height: var(--line-height-tight);
+}
+
+.heroSubtitle {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-xl);
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: var(--line-height-relaxed);
+}
+
+.heroStats {
+  display: flex;
+  gap: var(--spacing-xl);
+  justify-content: center;
+  align-items: center;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.statNumber {
+  font-size: var(--font-size-3xl);
+  font-weight: bold;
+  color: var(--color-accent-400);
+}
+
+.statLabel {
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Filter Section */
+.filterSection {
+  padding: var(--spacing-4xl) 0;
+  background-color: var(--color-neutral-50);
+}
+
+.filterSection > * {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+  display: flex;
+  justify-content: center;
+}
+
+/* Results Section */
+.resultsSection {
+  padding: var(--spacing-5xl) 0;
+  background-color: white;
+}
+
+.resultsSection > * {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.resultsCount {
+  font-size: var(--font-size-base);
+  color: var(--color-neutral-600);
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
+}
+
+.restaurantsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+}
+
+.noResults {
+  text-align: center;
+  padding: var(--spacing-4xl) 0;
+}
+
+.noResultsText {
+  color: var(--color-neutral-600);
+  font-size: var(--font-size-lg);
+}
+
+/* Loading States */
+.loadingContainer {
+  min-height: 100vh;
+  background-color: var(--color-neutral-50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingContent {
+  text-align: center;
+}
+
+.loadingSpinner {
+  animation: spin 1s linear infinite;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  border: 2px solid transparent;
+  border-top: 2px solid var(--color-primary-600);
+  margin: 0 auto var(--spacing-md);
+}
+
+.loadingText {
+  color: var(--color-neutral-600);
+}
+
+/* Responsive Design */
+@media (min-width: 640px) {
+  .heroStats {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .heroTitle {
+    font-size: var(--font-size-5xl);
+  }
+  
+  .heroSubtitle {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .restaurantsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .restaurantsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .heroStats {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .stat {
+    flex-direction: row;
+    gap: var(--spacing-md);
+  }
+
+  .heroTitle {
+    font-size: var(--font-size-3xl);
+  }
+
+  .heroSubtitle {
+    font-size: var(--font-size-lg);
+  }
+
+  .statNumber {
+    font-size: var(--font-size-2xl);
+  }
+
+  .statLabel {
+    font-size: var(--font-size-xs);
+  }
+}
+
+/* Animations */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

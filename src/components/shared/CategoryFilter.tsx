@@ -1,15 +1,21 @@
 import React from 'react'
 import styles from './CategoryFilter.module.css'
 
-interface Category {
+interface CategoryGroup {
   id: string
   name: string
   icon: string
   description: string
+  categories: string[]
+}
+
+interface CategoryData {
+  categoryGroups: CategoryGroup[]
+  categoryToGroupMapping: Record<string, string>
 }
 
 interface CategoryFilterProps {
-  categories: Category[]
+  categories: CategoryData
   selectedCategories: string[]
   onCategoryChange: (categories: string[]) => void
   layout?: 'horizontal' | 'vertical'
@@ -21,12 +27,32 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
   onCategoryChange,
   layout = 'horizontal'
 }) => {
-  const handleCategoryToggle = (categoryId: string) => {
-    if (selectedCategories.includes(categoryId)) {
-      onCategoryChange(selectedCategories.filter(id => id !== categoryId))
+  const handleGroupToggle = (groupId: string) => {
+    const group = categories.categoryGroups.find(g => g.id === groupId)
+    if (!group) return
+
+    const groupCategories = group.categories
+    const allGroupCategoriesSelected = groupCategories.every(cat => selectedCategories.includes(cat))
+    
+    if (allGroupCategoriesSelected) {
+      // Remove all categories from this group
+      onCategoryChange(selectedCategories.filter(cat => !groupCategories.includes(cat)))
     } else {
-      onCategoryChange([...selectedCategories, categoryId])
+      // Add all categories from this group
+      const newSelected = [...selectedCategories]
+      groupCategories.forEach(cat => {
+        if (!newSelected.includes(cat)) {
+          newSelected.push(cat)
+        }
+      })
+      onCategoryChange(newSelected)
     }
+  }
+
+  const isGroupActive = (groupId: string) => {
+    const group = categories.categoryGroups.find(g => g.id === groupId)
+    if (!group) return false
+    return group.categories.some(cat => selectedCategories.includes(cat))
   }
 
   const containerClass = layout === 'horizontal' 
@@ -35,18 +61,19 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
 
   return (
     <div className={containerClass}>
-      {categories.map((category) => (
+      {categories.categoryGroups.map((group) => (
         <button
-          key={category.id}
-          onClick={() => handleCategoryToggle(category.id)}
+          key={group.id}
+          onClick={() => handleGroupToggle(group.id)}
           className={`${styles.button} ${
-            selectedCategories.includes(category.id)
+            isGroupActive(group.id)
               ? styles.buttonActive
               : styles.buttonInactive
           }`}
+          title={group.description}
         >
-          <span className={styles.icon}>{category.icon}</span>
-          <span className={styles.label}>{category.name}</span>
+          <span className={styles.icon}>{group.icon}</span>
+          <span className={styles.label}>{group.name}</span>
         </button>
       ))}
     </div>

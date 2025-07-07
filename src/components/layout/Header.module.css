@@ -27,16 +27,14 @@
   text-decoration: none;
 }
 
-.logoTitle {
-  font-size: var(--font-size-2xl);
-  font-weight: bold;
-  color: var(--color-primary-600);
+.logoImage {
+  height: auto;
+  max-width: 100%;
+  transition: opacity var(--transition-fast);
 }
 
-.logoTagline {
-  margin-left: var(--spacing-sm);
-  font-size: var(--font-size-sm);
-  color: var(--color-neutral-500);
+.logoImage:hover {
+  opacity: 0.8;
 }
 
 .actions {

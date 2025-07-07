@@ -29,8 +29,20 @@ export default function HomePage() {
     if (selectedCategories.length === 0) {
       setFilteredRestaurants(restaurants)
     } else {
+      // Expand group selections to individual categories
+      const expandedCategories: string[] = []
+      selectedCategories.forEach(category => {
+        // Check if it's a group or individual category
+        const group = categoriesData.categoryGroups.find(g => g.id === category)
+        if (group) {
+          expandedCategories.push(...group.categories)
+        } else {
+          expandedCategories.push(category)
+        }
+      })
+
       const filtered = restaurants.filter(restaurant => 
-        selectedCategories.some(category => 
+        expandedCategories.some(category => 
           restaurant.categories.includes(category)
         )
       )
@@ -173,19 +185,18 @@ export default function HomePage() {
             </div>
           ) : (
             <div className={styles.restaurantsGrid}>
-              {filteredRestaurants.slice(0, 8).map((restaurant, index) => (
+              {filteredRestaurants.slice(0, 9).map((restaurant) => (
                 <RestaurantCard
                   key={restaurant.id}
                   restaurant={restaurant}
-                  variant={index === 0 ? 'featured' : 'list'}
+                  variant="list"
                   showDistance={true}
-                  className={index === 0 ? styles.featuredCard : ''}
                 />
               ))}
             </div>
           )}
           
-          {filteredRestaurants.length > 8 && (
+          {filteredRestaurants.length > 9 && (
             <div className={styles.viewAllButton}>
               <Link
                 href="/restaurants"

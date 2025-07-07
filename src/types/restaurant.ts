@@ -12,7 +12,7 @@ export interface Restaurant {
     dining: {
       cuisine: string
       dietaryOptions: string[]
-      reservations: 'required' | 'recommended' | 'not-accepted'
+      reservations: string
       reservationLink?: string
       averageMeal: string
     }
