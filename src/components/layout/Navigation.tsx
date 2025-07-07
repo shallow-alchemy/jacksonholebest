@@ -11,7 +11,6 @@ export const Navigation: React.FC = () => {
   const navItems = [
     { href: '/', label: 'Home' },
     { href: '/restaurants', label: 'Restaurants' },
-    { href: '/theme-demo', label: 'Themes' },
     { href: '/about', label: 'About' }
   ]
 
