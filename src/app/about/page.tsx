@@ -40,13 +40,13 @@ export default function AboutPage() {
           </div>
           <div className={styles.storyContent}>
             <p className={styles.storyText}>
-              After multiple trips exploring Grand Teton National Park and Jackson Hole's incredible outdoor offerings, 
+              After multiple trips exploring Grand Teton National Park and Jackson Hole&apos;s incredible outdoor offerings, 
               we found ourselves frustrated by dining guides that either focused on budget tourist traps or intimidating 
               fine dining with no middle ground. We wanted thoughtful recommendations that understood that after a 12-mile 
-              hike, you need more than a protein bar—but you also don't want to spend hours researching restaurants.
+              hike, you need more than a protein bar—but you also don&apos;t want to spend hours researching restaurants.
             </p>
             <p className={styles.storyText}>
-              That's why we created Jackson Hole Best: <strong>30-50 carefully curated restaurants</strong> that deliver 
+              That&apos;s why we created Jackson Hole Best: <strong>30-50 carefully curated restaurants</strong> that deliver 
               exceptional experiences across every price point, from post-hike fuel to celebration dinners.
             </p>
           </div>
@@ -65,7 +65,7 @@ export default function AboutPage() {
               <p className={styles.differenceCardText}>
                 Unlike generic travel sites with hundreds of listings, we organize dining around your outdoor experiences. 
                 Whether you need quick energy before hitting the trails, hearty refueling after a powder day, or a 
-                memorable dinner to cap off your adventure, we've got you covered.
+                memorable dinner to cap off your adventure, we&apos;ve got you covered.
               </p>
             </div>
 
@@ -92,7 +92,7 @@ export default function AboutPage() {
               <div className={styles.differenceIcon}>🏔️</div>
               <h3 className={styles.differenceCardTitle}>Park Integration</h3>
               <p className={styles.differenceCardText}>
-                We're the only guide that seamlessly connects Jackson town dining with Grand Teton National Park experiences, 
+                We&apos;re the only guide that seamlessly connects Jackson town dining with Grand Teton National Park experiences, 
                 including distance from park entrances and what meals work best for different outdoor itineraries.
               </p>
             </div>
@@ -112,7 +112,7 @@ export default function AboutPage() {
           
           <div className={styles.promiseGrid}>
             <div className={styles.promiseCard}>
-              <h3 className={styles.promiseCardTitle}>What you'll always find:</h3>
+              <h3 className={styles.promiseCardTitle}>What you&apos;ll always find:</h3>
               <ul className={styles.promiseList}>
                 <li>Honest pricing and value assessments</li>
                 <li>Practical details (reservations, dietary options, parking)</li>
@@ -123,7 +123,7 @@ export default function AboutPage() {
             </div>
             
             <div className={styles.promiseCard}>
-              <h3 className={styles.promiseCardTitle}>What you won't find:</h3>
+              <h3 className={styles.promiseCardTitle}>What you won&apos;t find:</h3>
               <ul className={styles.promiseList}>
                 <li>Tourist traps with mediocre food</li>
                 <li>Overwhelming lists of 100+ restaurants</li>
@@ -140,9 +140,9 @@ export default function AboutPage() {
         <div className={styles.ctaContainer}>
           <h2 className={styles.ctaTitle}>For Adventurers Who Appreciate Great Food</h2>
           <p className={styles.ctaText}>
-            Whether you're planning your first visit to Jackson Hole or you're a seasoned visitor looking for your next 
+            Whether you&apos;re planning your first visit to Jackson Hole or you&apos;re a seasoned visitor looking for your next 
             favorite spot, Jackson Hole Best delivers the thoroughly researched recommendations you need to eat exceptionally 
-            well during your time in one of America's most spectacular destinations.
+            well during your time in one of America&apos;s most spectacular destinations.
           </p>
           <p className={styles.ctaQuestion}>
             Ready to discover where adventure meets great food?
@@ -162,7 +162,7 @@ export default function AboutPage() {
       <section className={styles.footerSection}>
         <div className={styles.footerContainer}>
           <p className={styles.footerTagline}>
-            <em>Jackson Hole Best - Your trusted guide to exceptional dining in America's premier mountain destination.</em>
+            <em>Jackson Hole Best - Your trusted guide to exceptional dining in America&apos;s premier mountain destination.</em>
           </p>
         </div>
       </section>
